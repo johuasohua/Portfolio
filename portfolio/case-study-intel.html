@@ -10,14 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#f0f4ff;
-    --ink:#0071C5;
-    --ink-soft:#333333;
-    --muted:#666666;
+    --cream:#0071C5;
+    --ink:#ffffff;
+    --ink-soft:#f0f0f0;
+    --muted:#cccccc;
     --dark:#1a1a1a;
     --dark-2:#0f0f0f;
-    --line:#cce0ff;
-    --accent:#0071C5;
+    --line:#4499ff;
+    --accent:#ffffff;
     --maxw:900px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -36,6 +36,9 @@
   .breadcrumb{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:20px}
   h1{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:clamp(36px,7vw,56px);line-height:1.1;letter-spacing:-.5px;margin-bottom:16px}
   .tagline{font-size:clamp(17px,2vw,20px);color:var(--ink-soft);font-weight:500;margin-bottom:32px}
+
+  .image-container{position:relative;width:100%;max-width:100%;margin:50px 0 60px;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+  .image-container img{display:block;width:100%;height:auto}
 
   .content{margin:60px 0}
   .section{margin-bottom:50px}
@@ -82,6 +85,10 @@
     <h1>Intel Inside the Rock</h1>
     <p class="tagline">How Intel re-established itself as the processor of choice for competitive gamers—and drove measurable sales growth for partner retailers.</p>
   </section>
+
+  <div class="image-container">
+    <img src="../assets/intel.jpg" alt="Intel x OR Esports partnership">
+  </div>
 
   <div class="content">
 
