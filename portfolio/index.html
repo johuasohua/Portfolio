@@ -26,16 +26,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
-<script>
-  /* Enable pre-animation hidden states only when motion is allowed. If reduced-motion
-     is set (or this script is skipped), content stays fully visible and static. */
-  (function(){
-    try{
-      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if(!reduce){ document.documentElement.classList.add('has-anim'); }
-    }catch(e){}
-  })();
-</script>
 <style>
   :root{
     --cream:#eef8cf;
@@ -177,15 +167,9 @@
   .footer-social a{color:#8a8c7e;transition:.2s;text-decoration:none}
   .footer-social a:hover{color:var(--cream-on-dark)}
 
-  /* Motion — initial hidden states apply ONLY when JS adds .has-anim (never under reduced-motion / no-JS) */
-  .has-anim .hero .eyebrow,
-  .has-anim .hero h1.thesis,
-  .has-anim .hero .hero-sub,
-  .has-anim .hero .cta-row,
-  .has-anim .hero .hero-stats,
-  .has-anim .card,
-  .has-anim .logo-grid{opacity:0}
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -214,8 +198,8 @@
         <a class="btn ghost" href="#contact">Let’s talk</a>
       </div>
       <div class="hero-stats">
-        <div class="hstat"><div class="n"><span class="count" data-to="100">100</span>M+</div><div class="k">Impressions delivered</div></div>
-        <div class="hstat"><div class="n"><span class="count" data-to="10">10</span>+ yrs</div><div class="k">Gaming × brand</div></div>
+        <div class="hstat"><div class="n">100M+</div><div class="k">Impressions delivered</div></div>
+        <div class="hstat"><div class="n">10+ yrs</div><div class="k">Gaming × brand</div></div>
       </div>
     </div>
   </header>
@@ -298,15 +282,15 @@
           <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:28px">Shipped Work · Combined Impact</div>
           <div style="display:flex;justify-content:space-around;gap:30px;flex-wrap:wrap">
             <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1"><span class="count" data-to="103">103</span><span style="font-size:24px">M</span></div>
+              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">103<span style="font-size:24px">M</span></div>
               <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Total Impressions</div>
             </div>
             <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1"><span class="count" data-to="100">100</span><span style="font-size:24px">M+</span></div>
+              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">100<span style="font-size:24px">M+</span></div>
               <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Total Views</div>
             </div>
             <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1"><span class="count" data-to="50">50</span><span style="font-size:24px">M+</span></div>
+              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">50<span style="font-size:24px">M+</span></div>
               <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Engaged Audience</div>
             </div>
           </div>
@@ -445,95 +429,29 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" onerror="document.documentElement.classList.remove('has-anim')"></script>
 <script>
-(function(){
-  var root = document.documentElement;
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var animEnabled = !reduce && typeof anime !== 'undefined';
-
-  if(!animEnabled){
-    // Reduced motion or anime failed to load: show everything, no animation.
-    root.classList.remove('has-anim');
-  } else {
-    // 1. HERO — fade + slight upward slide on load, staggered ~80ms
-    var heroEls = ['.hero .eyebrow','.hero h1.thesis','.hero .hero-sub','.hero .cta-row','.hero .hero-stats']
-      .map(function(s){return document.querySelector(s);}).filter(Boolean);
-    anime.set(heroEls, {opacity:0, translateY:20});
-    anime({targets:heroEls, opacity:[0,1], translateY:[20,0], duration:520,
-           delay:anime.stagger(80), easing:'easeOutQuad'});
-
-    // 3 + 4. Scroll-triggered reveals (once), via IntersectionObserver
-    var revealIO = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(!e.isIntersecting) return;
-        var el = e.target; revealIO.unobserve(el);
-        if(el.classList.contains('logo-grid')){
-          anime({targets:el, opacity:[0,1], duration:600, easing:'easeOutQuad'}); // 4. logos together, no stagger
-        } else {
-          anime({targets:el, opacity:[0,1], translateY:[24,0], duration:500,
-                 delay:(el.__stagger||0), easing:'easeOutQuad'}); // 3. cards, staggered in-row
-        }
-      });
-    }, {threshold:.15});
-
-    document.querySelectorAll('.work').forEach(function(work){
-      work.querySelectorAll('.card').forEach(function(card, i){
-        anime.set(card, {opacity:0, translateY:24});
-        card.__stagger = (i % 2) * 90; // neighbours in a row animate slightly apart
-        revealIO.observe(card);
-      });
-    });
-    var lg = document.querySelector('.logo-grid');
-    if(lg){ anime.set(lg, {opacity:0}); revealIO.observe(lg); }
-
-    // 2. COUNT-UP for stat numbers, triggered once on scroll into view
-    var countIO = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(!e.isIntersecting) return;
-        var el = e.target; countIO.unobserve(el);
-        var to = parseFloat(el.getAttribute('data-to')) || 0;
-        var obj = {v:0};
-        anime({targets:obj, v:to, duration:1100, easing:'easeOutExpo', round:1,
-               update:function(){ el.textContent = Math.round(obj.v); }});
-      });
-    }, {threshold:.6});
-    document.querySelectorAll('.count').forEach(function(el){ countIO.observe(el); });
-
-    // 5. Card hover — subtle scale via anime (CSS keeps the offset-shadow on :hover)
-    document.querySelectorAll('.card').forEach(function(card){
-      card.addEventListener('mouseenter', function(){
-        anime.remove(card);
-        anime({targets:card, scale:1.015, translateY:-3, duration:220, easing:'easeOutQuad'});
-      });
-      card.addEventListener('mouseleave', function(){
-        anime.remove(card);
-        anime({targets:card, scale:1, translateY:0, duration:220, easing:'easeOutQuad'});
-      });
-    });
-  }
-
-  // --- existing handlers (always run, animation or not) ---
-  document.querySelectorAll('[data-asset]').forEach(function(a){
-    a.addEventListener('click',function(ev){
-      if(a.getAttribute('href')==='#'){ev.preventDefault();var t=a.innerHTML;a.textContent='↑ Add your link in the code';setTimeout(function(){a.innerHTML=t;},1400);}
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.querySelectorAll('[data-asset]').forEach(a=>{
+    a.addEventListener('click',ev=>{
+      if(a.getAttribute('href')==='#'){ev.preventDefault();const t=a.innerHTML;a.textContent='↑ Add your link in the code';setTimeout(()=>{a.innerHTML=t},1400);}
     });
   });
-  var mobileMenu=document.querySelector('.mobile-menu');
-  var nav=document.querySelector('.nav');
+  const mobileMenu=document.querySelector('.mobile-menu');
+  const nav=document.querySelector('.nav');
+  const navlinks=document.querySelector('.navlinks');
   if(mobileMenu){
-    mobileMenu.addEventListener('click',function(){
+    mobileMenu.addEventListener('click',()=>{
       nav.classList.toggle('active');
       mobileMenu.classList.toggle('open');
     });
-    document.querySelectorAll('.navlinks a').forEach(function(link){
-      link.addEventListener('click',function(){
+    document.querySelectorAll('.navlinks a').forEach(link=>{
+      link.addEventListener('click',()=>{
         nav.classList.remove('active');
         mobileMenu.classList.remove('open');
       });
     });
   }
-})();
 </script>
 </body>
 </html>
