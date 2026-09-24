@@ -172,6 +172,11 @@ h1,h2,h3,.pull{text-wrap:balance}
 .contact .actions{padding-bottom:110px}
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;padding-bottom:36px;border-top:1px solid var(--line);color:var(--text-3)}
 
+.contact-art{position:absolute;right:calc(max(16px,calc((100% - var(--max))/2)) - 48px);bottom:96px;height:min(520px,76%);aspect-ratio:858/940;pointer-events:none}
+.contact-art::before{content:"";position:absolute;inset:8% -12% 0;background:radial-gradient(closest-side,rgba(168,60,255,.28),transparent 72%)}
+.contact-art img{position:relative;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}
+.contact-in{position:relative;z-index:1}
+@media (max-width:960px){.contact-art{height:340px;bottom:auto;top:40px;right:-60px;opacity:.22}}
 /* ---------- HOVER (real pointers only) ---------- */
 @media (hover:hover) and (pointer:fine){
   .links a:hover{color:var(--text)}
@@ -411,7 +416,8 @@ h1,h2,h3,.pull{text-wrap:balance}
 </section>
 
 <section id="contact" class="contact">
-  <div class="wrap">
+  <div class="contact-art" aria-hidden="true"><img src="assets/web/footer-char.webp" alt=""></div>
+  <div class="wrap contact-in">
     <span class="mono idx">Contact</span>
     <h2 class="disp mega">Let's <em>talk.</em></h2>
     <a class="mail" href="mailto:joshuageorge012@gmail.com">joshuageorge012@gmail.com <span>↗</span></a>
