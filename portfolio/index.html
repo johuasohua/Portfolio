@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Joshua George: Gaming &amp; Esports Creative Strategist</title>
 <meta name="description" content="I make brands playable. Creative strategy for brands entering gaming, esports and live-streaming culture across MENA.">
 
@@ -10,462 +10,420 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Joshua George">
 <meta property="og:url" content="https://joshuageorgeportfolio.vercel.app/">
-<meta property="og:title" content="Joshua George — Gaming &amp; Esports Creative Strategist">
+<meta property="og:title" content="Joshua George: Gaming &amp; Esports Creative Strategist">
 <meta property="og:description" content="I make brands playable. Creative strategy for brands entering gaming, esports and live-streaming culture. 100M+ views delivered across KFC, Intel, Raising Cane's and more.">
 <meta property="og:image" content="https://joshuageorgeportfolio.vercel.app/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Joshua George — I make brands playable. Gaming & Esports Creative Strategist.">
+<meta property="og:image:alt" content="Joshua George: I make brands playable. Gaming & Esports Creative Strategist.">
 
 <!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Joshua George — Gaming &amp; Esports Creative Strategist">
+<meta name="twitter:title" content="Joshua George: Gaming &amp; Esports Creative Strategist">
 <meta name="twitter:description" content="I make brands playable. Creative strategy for brands entering gaming, esports and live-streaming culture. 100M+ views delivered.">
 <meta name="twitter:image" content="https://joshuageorgeportfolio.vercel.app/assets/og-image.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --cream:#eef8cf;
-    --cream-2:#e6f2c2;
-    --ink:#14140f;
-    --ink-soft:#3a3a30;
-    --muted:#6b6b5c;
-    --dark:#111210;
-    --dark-2:#1a1b17;
-    --line:#d8e4b4;
-    --line-dark:#2b2d26;
-    --accent:#14140f;
-    --cream-on-dark:#eef8cf;
-    --maxw:1200px;
-    --ease-out:cubic-bezier(0.23,1,0.32,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--cream);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 
-  .nav{position:sticky;top:0;z-index:50;background:rgba(238,248,207,.82);backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}
-  .nav::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:14px;background:linear-gradient(to bottom,rgba(20,20,15,.05),transparent);pointer-events:none}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .logo-word{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:16px;letter-spacing:-.3px}
-  .logo-word .u{color:var(--accent)}
-  .navlinks{display:flex;gap:8px;align-items:center}
-  .navlinks a{font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:100px;border:1px solid transparent;transition:border-color .2s ease,background-color .2s ease,color .2s ease}
-  .navlinks a:hover{border-color:var(--ink)}
-  .navlinks a.pill-dark{background:var(--ink);color:var(--cream)}
-  .navlinks a.pill-dark:hover{background:#000}
-  .mobile-menu{display:none;flex-direction:column;gap:4px;cursor:pointer}
-  .mobile-menu span{width:22px;height:2px;background:var(--ink);transition:transform .25s ease,opacity .25s ease}
-  .mobile-menu.open span:nth-child(1){transform:rotate(45deg) translate(8px,8px)}
-  .mobile-menu.open span:nth-child(2){opacity:0}
-  .mobile-menu.open span:nth-child(3){transform:rotate(-45deg) translate(8px,-8px)}
-  @media(max-width:760px){
-    .navlinks a:not(.pill-dark){display:none}
-    .mobile-menu{display:flex}
-    .nav.active .navlinks{position:absolute;top:66px;left:0;right:0;background:var(--cream);flex-direction:column;gap:0;border-bottom:1.5px solid var(--line);padding:12px 28px}
-    .nav.active .navlinks a{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
-    .nav.active .navlinks a:last-child{border-bottom:none}
-    .nav.active .navlinks a.pill-dark{background:transparent;border-bottom:0;margin-top:8px}
-  }
+:root{
+  --bg:#0A0A0B; --bg-2:#101012; --bg-3:#17171A;
+  --line:rgba(243,241,234,.09); --line-2:rgba(243,241,234,.18);
+  --text:#F3F1EA; --text-2:#A9A79F; --text-3:#6F6E69;
+  --accent:#D0FF4A; --accent-ink:#0A0A0B;
+  --display:'Archivo',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.23,1,.32,1);
+  --max:1240px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--display);font-stretch:100%;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+em{font-style:normal;color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+h1,h2,h3,.pull{text-wrap:balance}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
 
-  .hero{padding:70px 0 58px;position:relative}
-  .hero .wrap{position:relative}
-  .hero .eyebrow,.hero h1.thesis,.hero .hero-sub,.hero .cta-row,.hero .hero-stats{position:relative;z-index:2}
-  .hero-art{position:absolute;right:0;bottom:0;width:auto;height:min(660px,84vh);z-index:1;pointer-events:none;filter:drop-shadow(0 18px 30px rgba(20,20,15,.22))}
-  @media(max-width:900px){.hero-art{display:none}}
-  .eyebrow{font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:26px;display:flex;align-items:center;gap:12px}
-  .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent)}
-  h1.thesis{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:clamp(52px,10vw,132px);line-height:.9;letter-spacing:-1.5px;text-transform:uppercase}
-  h1.thesis .playable{color:var(--accent)}
-  .hero-sub{max-width:640px;margin-top:32px;font-size:clamp(17px,2.1vw,21px);color:var(--ink-soft);font-weight:500}
-  .hero-sub strong{color:var(--ink);font-weight:700}
-  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-  .btn{font-weight:700;font-size:14px;padding:15px 26px;border-radius:100px;border:1.5px solid var(--ink);transition:transform .16s ease-out,background-color .2s ease,color .2s ease,border-color .2s ease;display:inline-flex;align-items:center;gap:9px}
-  .btn:active{transform:scale(.97)}
-  .btn.solid{background:var(--ink);color:var(--cream)}
-  .btn.solid:hover{background:#000}
-  .btn.ghost:hover{background:var(--ink);color:var(--cream)}
-  .hero-stats{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:44px;padding-top:32px;border-top:1.5px solid var(--line)}
-  .hstat .n{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:clamp(26px,4vw,38px);line-height:1;letter-spacing:-1px}
-  .hstat .k{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:6px}
+.mono{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.disp{font-family:var(--display);font-stretch:125%;font-weight:850;text-transform:uppercase;letter-spacing:-.02em;line-height:.9}
+.num i,.big i,.mid i{font-style:normal;color:var(--accent)}
 
-  section{padding:90px 0}
-  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px;flex-wrap:wrap}
-  .sec-title{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,58px);line-height:.92;letter-spacing:-1px}
-  .sec-kicker{font-weight:700;font-size:12px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+/* ---------- NAV ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,10,11,.72);backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-stretch:125%;font-weight:800;font-size:15px;letter-spacing:-.01em;text-transform:uppercase}
+.brand span{color:var(--accent)}
+.links{display:flex;align-items:center;gap:30px}
+.links a{font-size:14px;font-weight:500;color:var(--text-2);transition:color .2s ease}
+.links a .idx{margin-right:8px;color:var(--text-3);font-size:10.5px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:100px;background:var(--accent);color:var(--accent-ink)!important;font-weight:700!important}
 
-  .dark{background:var(--dark);color:var(--cream-on-dark)}
-  .dark .sec-title{color:var(--cream-on-dark)}
-  .dark .sec-kicker{color:#8a8c7e}
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:64px 0 0;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-10%;top:-20%;width:70%;height:90%;background:radial-gradient(closest-side,rgba(208,255,74,.07),transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.22fr .78fr;gap:24px;align-items:end;min-height:640px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line-2);border-radius:100px;color:var(--text-2);margin-bottom:34px}
+.status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(208,255,74,.15)}
+.eyebrow{color:var(--text-3);margin-bottom:18px}
+.h1{font-size:clamp(46px,7.3vw,106px);text-wrap:balance}
+.lede{max-width:540px;margin-top:30px;font-size:19px;line-height:1.55;color:var(--text-2)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px;padding-bottom:64px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:100px;font-weight:700;font-size:14px;border:1px solid var(--line-2);transition:transform .16s ease-out,background-color .2s ease,border-color .2s ease,color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn-ghost{color:var(--text)}
 
-  .tier{display:flex;align-items:center;gap:12px;margin-bottom:22px;font-weight:800;font-size:14px;letter-spacing:1px;text-transform:uppercase}
-  .tier .dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
-  .tier .dot.grey{background:var(--muted)}
-  .tier .note{font-weight:500;letter-spacing:0;text-transform:none;color:var(--muted);font-size:13px;border-left:1px solid var(--line);padding-left:12px}
+.hero-art{position:relative;height:660px;align-self:end}
+.hero-art .glow{position:absolute;left:-10%;right:-10%;top:12%;bottom:-6%;background:radial-gradient(closest-side,rgba(208,255,74,.20),rgba(208,255,74,.05) 55%,transparent 78%)}
+.hero-art img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;max-width:none;
+  -webkit-mask-image:linear-gradient(to bottom,#000 68%,transparent 99%);mask-image:linear-gradient(to bottom,#000 68%,transparent 99%);
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,.55))}
+.hud{position:absolute;width:18px;height:18px;border:0 solid var(--line-2)}
+.hud.tl{top:40px;left:0;border-top-width:1.5px;border-left-width:1.5px}
+.hud.tr{top:40px;right:0;border-top-width:1.5px;border-right-width:1.5px}
+.hud.bl{bottom:28px;left:0;border-bottom-width:1.5px;border-left-width:1.5px}
+.hud.br{bottom:28px;right:0;border-bottom-width:1.5px;border-right-width:1.5px}
+.art-cap{position:absolute;left:0;bottom:0;color:var(--text-3);font-size:10.5px}
 
-  .work{display:flex;flex-direction:column;gap:22px}
-  .card{background:#fff;border:1.5px solid var(--ink);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1.12fr 1fr;transition:transform .22s var(--ease-out),box-shadow .22s ease}
-  @media(max-width:820px){.card{grid-template-columns:1fr}}
-  .card-body{padding:40px 40px 36px}
-  .card-media{position:relative;background:var(--dark);border-left:1.5px solid var(--ink);aspect-ratio:1/1.2;display:flex}
-  @media(max-width:820px){.card-media{border-left:0;border-top:1.5px solid var(--ink);order:-1;aspect-ratio:auto;min-height:280px}}
-  .card-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-  .mtag{position:absolute;top:14px;left:14px;font-weight:700;font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:6px 11px;border-radius:100px;background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
-  .mtag.ship{background:var(--accent);color:#fff;border-color:var(--accent)}
+.scoreboard{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line)}
+.cell{padding:30px 28px 32px;border-left:1px solid var(--line)}
+.cell:first-child{border-left:0;padding-left:0}
+.num{font-size:clamp(34px,3.7vw,54px)}
+.cell .lbl{margin-top:12px;color:var(--text-3);line-height:1.5}
 
-  .client{font-weight:700;font-size:12.5px;letter-spacing:1px;color:var(--accent);text-transform:uppercase;margin-bottom:11px}
-  .card h3{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(23px,3.2vw,32px);line-height:.98;letter-spacing:-.5px;margin-bottom:18px}
-  .cs{margin:13px 0}
-  .cs .lbl{font-weight:700;font-size:10.5px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:3px}
-  .cs p{font-size:15px;color:var(--ink-soft)}
-  .cs p b{color:var(--ink);font-weight:700}
-  .metrics{display:flex;gap:26px;margin:24px 0 12px;flex-wrap:wrap;padding-top:22px;border-top:1.5px solid var(--line)}
-  .metric .n{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:30px;line-height:1;letter-spacing:-1px}
-  .metric .n .u{font-size:15px;color:var(--accent);margin-left:1px}
-  .metric .k{font-size:10.5px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-top:5px}
-  .award{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;font-size:12.5px;color:var(--ink);border:1.5px solid var(--ink);background:var(--cream);padding:10px 16px;border-radius:100px;transition:transform .2s var(--ease-out),box-shadow .2s ease;cursor:default}
-  .card-link{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid var(--accent);padding-bottom:3px}
-  .card-link .arw{color:var(--accent);transition:transform .2s var(--ease-out)}
+/* ---------- SECTIONS ---------- */
+.sec{padding:120px 0 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head .idx{display:block;color:var(--accent);margin-bottom:14px}
+.h2{font-size:clamp(34px,4.6vw,64px)}
+.note{color:var(--text-3)}
 
-  .caps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media(max-width:720px){.caps{grid-template-columns:1fr}}
-  .cap{background:var(--dark-2);border:2px solid transparent;border-radius:14px;padding:26px 24px}
-  .cap .cnum{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:32px;color:var(--accent);margin-bottom:8px}
-  .cap h4{font-weight:800;font-size:17px;margin:0 0 12px;color:var(--cream-on-dark)}
-  .cap p{font-size:14px;color:#9a9c8c;line-height:1.6}
+/* ---------- WORK ---------- */
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.case{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:var(--bg-2);transition:border-color .25s ease}
+.media{position:relative;height:320px;flex:none;overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.media::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,11,.4) 0%,rgba(10,10,11,0) 26%,rgba(10,10,11,0) 58%,var(--bg-2) 100%)}
+.c-rc .media img{object-position:center 58%}.c-kfc .media img{object-position:center 0%}
+.c-intel .media img{object-position:center 0%}.c-rooter .media img{object-position:center 42%}
+.c-rc,.c-kfc,.c-intel,.c-rooter{grid-column:span 6}
+.cn{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--text-3);font-size:10.5px}
+.cn.win{color:var(--accent)}
+.case-top{position:absolute;top:20px;left:22px;right:20px;z-index:2;display:flex;justify-content:space-between;align-items:center}
+.tag{padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line-2);color:var(--text);font-size:10.5px}
+.arrow{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(10,10,11,.7);border:1px solid var(--line-2);font-size:17px;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.case-body{position:relative;display:flex;flex-direction:column;flex:1;padding:4px 30px 30px}
+.client{color:var(--text-2);margin-bottom:12px}
+.h3{font-size:clamp(24px,2.5vw,36px);font-weight:800}
+.sum{margin:14px 0 26px;max-width:470px;color:var(--text-2);font-size:15.5px;line-height:1.55}
+.case-metrics{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 36px;margin-top:auto;padding-top:22px;border-top:1px solid var(--line-2)}
+.big{font-size:clamp(44px,4.4vw,64px);color:var(--accent)}
+.mid{font-size:28px}
+.case-metrics .lbl{margin-top:10px;color:var(--text-3);font-size:10.5px;max-width:230px;line-height:1.5}
+.award{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:8px 12px;border-radius:100px;border:1px solid rgba(208,255,74,.35);color:var(--accent);font-size:10.5px}
 
-  .logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  @media(max-width:820px){.logo-grid{grid-template-columns:repeat(3,1fr)}}
-  @media(max-width:520px){.logo-grid{grid-template-columns:repeat(2,1fr)}}
-  .logo{background:var(--cream);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:26px 24px;min-height:112px;transition:transform .2s var(--ease-out)}
-  .logo img{max-width:100%;max-height:44px;width:auto;height:auto;object-fit:contain}
+/* ---------- CONCEPTS ---------- */
+.concepts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.concept{display:block;padding:14px 14px 24px;border:1px solid var(--line);border-radius:14px;background:var(--bg-2);transition:border-color .25s ease,background-color .25s ease}
+.c-img{position:relative;aspect-ratio:16/10;border-radius:9px;overflow:hidden;margin-bottom:22px;background:var(--bg-3)}
+.c-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .7s var(--ease),filter .4s ease}
+.c-img .tag{position:absolute;top:12px;left:12px}
+.concept .client,.concept h3,.concept .sum,.concept .link{padding:0 10px}
+.concept h3{font-size:22px;font-weight:700;letter-spacing:-.01em;font-stretch:110%}
+.concept .sum{font-size:14.5px;margin-top:10px}
+.concept .link{display:inline-block;margin-top:18px;color:var(--text)}
 
-  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
-  @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:28px}}
-  .about p{font-size:17.5px;color:var(--ink-soft);margin-bottom:16px;max-width:60ch}
-  .about p strong{color:var(--ink);font-weight:700}
-  .facts{border:1.5px solid var(--ink);border-radius:16px;background:#fff;padding:28px 32px}
-  .fact{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
-  .fact:last-child{border-bottom:0}
-  .fact .k{font-weight:600;font-size:11px;letter-spacing:.8px;color:var(--muted);text-transform:uppercase;flex:1}
-  .fact .v{font-size:18px;font-weight:900;text-align:right;color:var(--ink);font-family:'Archivo Expanded','Archivo',sans-serif}
+/* ---------- CAPABILITIES ---------- */
+.caps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-2)}
+.cap{padding:34px 30px 40px 0;border-bottom:1px solid var(--line)}
+.cap:not(:nth-child(3n+1)){padding-left:30px;border-left:1px solid var(--line)}
+.cap .n{color:var(--accent)}
+.cap h4{margin-top:22px;font-size:21px;font-weight:650;letter-spacing:-.01em;font-stretch:108%}
+.cap p{margin-top:10px;color:var(--text-2);font-size:15px;max-width:320px}
 
-  .contact{background:var(--dark);color:var(--cream-on-dark);padding:80px 0 88px}
-  .contact .eyebrow{color:var(--accent)}
-  .contact h1.thesis .playable{color:var(--accent)}
-  .contact .btn{border-color:var(--cream)}
-  .contact .btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
-  .contact .btn.ghost{color:var(--cream)}
-  .contact .btn.ghost:hover{background:var(--cream);color:var(--ink)}
+/* ---------- LOGOS ---------- */
+.logos{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line-2);border-left:1px solid var(--line)}
+.logo{height:128px;display:grid;place-items:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background-color .25s ease}
+.logo img{max-width:60%;max-height:44px;width:auto;height:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.55;transition:opacity .25s ease}
 
-  footer{background:var(--dark);color:#8a8c7e;padding:32px 0;border-top:1px solid var(--line-dark)}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-weight:600;font-size:12px;letter-spacing:.5px}
-  .footer-social{display:flex;gap:14px}
-  .footer-social a{color:#8a8c7e;transition:color .2s ease;text-decoration:none}
-  .footer-social a:hover{color:var(--cream-on-dark)}
+.logo-txt{color:var(--text-3);line-height:1.9;text-align:center}
 
-  .reveal{opacity:0;transform:translateY(20px);transition:opacity .4s var(--ease-out),transform .4s var(--ease-out)}
-  .reveal.in{opacity:1;transform:none}
+/* ---------- ABOUT ---------- */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+.pull{font-stretch:112%;font-weight:700;text-transform:none;letter-spacing:-.025em;line-height:1.04;font-size:clamp(32px,3.6vw,50px)}
+.about-right p{color:var(--text-2);font-size:17px;margin-bottom:18px}
+.facts{margin-top:34px;border-top:1px solid var(--line-2)}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--text-3)}
+.facts dd{font-weight:600;text-align:right}
 
-  /* Hover motion gated to real pointers — touch taps fire a false :hover that would stick */
-  @media (hover:hover) and (pointer:fine){
-    .btn:hover{transform:translateY(-1px)}
-    .card:hover{transform:translateY(-3px);box-shadow:8px 8px 0 var(--ink)}
-    .card-link:hover .arw{transform:translateX(5px)}
-    .award:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(20,20,15,.1)}
-    .logo:hover{transform:translateY(-3px)}
-  }
+/* ---------- CONTACT ---------- */
+.contact{margin-top:140px;padding:110px 0 0;border-top:1px solid var(--line-2);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;left:-15%;bottom:-40%;width:70%;height:110%;background:radial-gradient(closest-side,rgba(208,255,74,.08),transparent 70%)}
+.contact .idx{color:var(--accent);display:block;margin-bottom:22px}
+.mega{font-size:clamp(40px,8.4vw,128px)}
+.mail{display:inline-flex;gap:12px;margin-top:40px;font-size:clamp(20px,2.4vw,30px);font-weight:600;border-bottom:1px solid var(--line-2);padding-bottom:6px}
+.contact .actions{padding-bottom:110px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;padding-bottom:36px;border-top:1px solid var(--line);color:var(--text-3)}
 
-  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-  @media(prefers-reduced-transparency:reduce){.nav{background:var(--cream);backdrop-filter:none;-webkit-backdrop-filter:none}.nav::after{display:none}}
-  @media(prefers-contrast:more){.nav::after{display:none}.nav{border-bottom:1px solid var(--ink)}}
+/* ---------- HOVER (real pointers only) ---------- */
+@media (hover:hover) and (pointer:fine){
+  .links a:hover{color:var(--text)}
+  .btn-ghost:hover{border-color:var(--text)}
+  .btn-accent:hover{background:#E1FF7A}
+  .case:hover{border-color:rgba(208,255,74,.55)}
+  .case:hover .media img{transform:scale(1.035)}
+  .case:hover .arrow{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .concept:hover{border-color:var(--line-2);background:var(--bg-3)}
+  .concept:hover .c-img img{transform:scale(1.04);filter:saturate(1)}
+  .logo:hover{background:var(--bg-2)}
+  .logo:hover img{opacity:1}
+  .mail:hover{border-color:var(--accent)}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:960px){
+  .links a:not(.pill){display:none}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .actions{padding-bottom:24px}
+  .hero-art{height:460px;margin-top:8px}
+  .scoreboard{grid-template-columns:1fr 1fr}
+  .cell{padding:24px 18px}
+  .cell:nth-child(3){border-left:0;padding-left:0}
+  .cell:nth-child(n+3){border-top:1px solid var(--line)}
+  .work-grid{grid-template-columns:1fr}
+  .c-rc,.c-kfc,.c-intel,.c-rooter{grid-column:auto}
+  .concepts,.caps{grid-template-columns:1fr}
+  .cap,.cap:not(:nth-child(3n+1)){padding:28px 0 32px;border-left:0}
+  .logos{grid-template-columns:repeat(3,1fr)}
+  .logo{height:96px}
+  .about{grid-template-columns:1fr;gap:36px}
+  .sec{padding-top:88px}
+}
+@media (max-width:560px){.wrap{padding:0 20px}.case-body{padding:22px}.case-metrics{gap:24px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="wrap">
-      <div class="logo-word">JOSHUA GEORGE<span class="u">.</span></div>
-      <div class="navlinks">
-        <a href="#work">Work</a>
-        <a href="#capabilities">What I Do</a>
-        <a href="#partners">Partners</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="pill-dark">Let’s talk →</a>
-      </div>
-      <div class="mobile-menu"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+<nav class="nav"><div class="wrap nav-in">
+  <a class="brand" href="#top">Joshua George<span>.</span></a>
+  <div class="links">
+    <a href="#work">Work</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#about">About</a>
+    <a class="pill" href="#contact">Let's talk <span>↗</span></a>
+  </div>
+</div></nav>
 
-  <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Gaming &amp; Esports Creative Strategist</div>
-      <h1 class="thesis">I make<br>brands <span class="playable">playable</span></h1>
-      <p class="hero-sub">I help brands earn an authentic place in gaming, esports and live-streaming culture, turning audience insight into campaign concepts and carrying them from idea through pitch to launch.</p>
-      <div class="cta-row">
-        <a class="btn solid" href="#work">See the work →</a>
-        <a class="btn ghost" href="#contact">Let’s talk</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hstat"><div class="n">100M+</div><div class="k">Impressions delivered</div></div>
-        <div class="hstat"><div class="n">10+ yrs</div><div class="k">Gaming × brand</div></div>
-      </div>
-      <img class="hero-art" src="assets/game/char-tracksuit.png" alt="" aria-hidden="true">
-    </div>
-  </header>
-
-  <main>
-    <section id="work">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="sec-title">Selected Work</div>
-        </div>
-
-        <div class="tier reveal"><span class="dot"></span>Shipped &amp; delivered<span class="note">Real campaigns · measured results</span></div>
-        <div class="work">
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">KFC × BGMI × OR Esports</div>
-              <h3>The KFC Lootbox</h3>
-              <div class="cs"><span class="lbl">Challenge</span><p>KFC needed genuine cultural relevance with India’s Gen-Z mobile gamers: an audience that tunes out conventional QSR advertising.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>A custom <b>3D Colonel Sanders model dropped into the live broadcast</b> during the OR Esports Championship. Viewers captured screenshots and shared them on Instagram for exclusive rewards, tied to a real-world “KFC Lootbox” meal mechanic on the KFC app.</p></div>
-              <div class="metrics">
-                <div class="metric"><div class="n">27.1<span class="u">M</span></div><div class="k">Impressions</div></div>
-                <div class="metric"><div class="n">5.76<span class="u">M</span></div><div class="k">Views</div></div>
-              </div>
-              <div class="award">★ Brand Disruption Awards ‘22: Best Small-Budget Campaign</div>
-              <div><a class="card-link" href="case-study-kfc.html">Read case study <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag ship">● Shipped</span><img src="assets/kfc.jpg" alt="KFC x BGMI campaign"></div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Raising Cane’s × POWR · Saudi Arabia</div>
-              <h3>Raising POWR In KSA</h3>
-              <div class="cs"><span class="lbl">Challenge</span><p>Ten years in Saudi Arabia and 26 stores, yet almost no awareness with the Gen Z gamers who were its core audience, the same people who already spend hours a day watching gaming content.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>Build an <b>always-on gaming layer</b> with POWR, the largest gaming creator cohort in KSA: <b>16 creators, 147M+ combined reach</b>. Rather than buying media, embed Raising Cane’s into gaming culture as a permanent presence across every campaign.</p></div>
-              <div class="metrics">
-                <div class="metric"><div class="n">40<span class="u">M+</span></div><div class="k">Impressions</div></div>
-                <div class="metric"><div class="n">25<span class="u">M+</span></div><div class="k">Views</div></div>
-              </div>
-              <div class="award">◆ 2 shipped campaigns · ongoing brand partnership</div>
-              <div><a class="card-link" href="case-study-raisingcanes.html">Read case study <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag ship">● Shipped · Series</span><img src="assets/raisingcanes-watchparty.jpg" alt="Raising Cane's x POWR in-store watch party in KSA"></div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Intel × OR Esports · 12-month partnership</div>
-              <h3>Intel Inside the Rock</h3>
-              <div class="cs"><span class="lbl">Challenge</span><p>Intel was losing mindshare among India’s gamers to AMD’s lower price point. Gamers saw Intel as premium but not performance-necessary. Intel needed to shift the conversation from price to competitive advantage, where milliseconds matter.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>Position Intel where performance mattered most: <b>professional esports.</b> A 12-month partnership with OR Esports leveraging elite players to prove that competitive gaming is won on performance, and Intel-powered rigs are the standard at the highest level.</p></div>
-              <div class="metrics">
-                <div class="metric"><div class="n">35<span class="u">M+</span></div><div class="k">Impressions</div></div>
-                <div class="metric"><div class="n">18<span class="u">M</span></div><div class="k">Views</div></div>
-              </div>
-              <div><a class="card-link" href="case-study-intel.html">Read case study <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag ship">● Shipped · Tier-1</span><img src="assets/intel.jpg" alt="Intel x OR Esports Gaming Technology Partner"></div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Rooter × OR Esports</div>
-              <h3>Rooter Exclusive</h3>
-              <div class="cs"><span class="lbl">Challenge</span><p>Rooter entered India's crowded gaming streaming market competing against YouTube Gaming and Loco. While the platform had the tech, it lacked <b>exclusive content</b> and <b>creator credibility</b> to establish itself as a destination.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>I brokered an exclusive 24-month platform partnership with OR Esports, leveraging an <b>audience migration strategy</b>. Creators would stream on YouTube then direct audiences to Rooter for exclusivity, while securing exclusive broadcast rights to Legends Rise, giving Rooter premium tournament content from day one.</p></div>
-              <div class="metrics">
-                <div class="metric"><div class="n">50<span class="u">M+</span></div><div class="k">Livestream Views</div></div>
-                <div class="metric"><div class="n">$200<span class="u">K</span></div><div class="k">Partnership Value</div></div>
-              </div>
-              <div><a class="card-link" href="case-study-rooter.html">Read case study <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag ship">● Shipped · Platform</span><img src="assets/rooter.jpg" alt="Rooter x OR Esports exclusive streaming partnership"></div>
-          </article>
-
-        </div>
-
-        <div style="margin:60px 0 40px;padding:44px;background:#fff;border:1.5px solid var(--ink);border-radius:18px;text-align:center">
-          <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:28px">Shipped Work · Combined Impact</div>
-          <div style="display:flex;justify-content:space-around;gap:30px;flex-wrap:wrap">
-            <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">103<span style="font-size:24px">M</span></div>
-              <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Total Impressions</div>
-            </div>
-            <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">100<span style="font-size:24px">M+</span></div>
-              <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Total Views</div>
-            </div>
-            <div>
-              <div style="font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:48px;color:var(--ink);line-height:1">50<span style="font-size:24px">M+</span></div>
-              <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:8px">Engaged Audience</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tier reveal" style="margin-top:50px"><span class="dot grey"></span>Concept &amp; strategy<span class="note">Spec work · how I think on a blank page</span></div>
-        <div class="work">
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Footlocker × ShongXbong</div>
-              <h3>The Live Hunt</h3>
-              <div class="cs"><span class="lbl">Insight</span><p>Gen-Z sneaker culture wants <b>creator-led discovery,</b> not retail aisles. The thrill is in the hunt, and the community wants to be part of it.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>A 12-hour live-streamed sneaker hunt across KSA and UAE with creator ShongXbong, where <b>the audience directs the mission in real time</b> by voting on shoes, stores and stops, tied to in-store meet-and-greets and flash drops.</p></div>
-              <div class="cs"><span class="lbl">Content engine</span><p>Real-time clipping: 300+ branded short-form clips pushed live across TikTok, Instagram and YouTube as the stream runs.</p></div>
-              <div><a class="card-link" href="https://drive.google.com/file/d/1V3TWrYCg9vBWw0a2O-qpyJNf1i9mC9S_/view?usp=sharing" target="_blank">View concept deck <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag">◆ Concept</span><img src="assets/footlocker.jpg" alt="Footlocker x ShongXbong live stream concept"></div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Wingstop × PUBG Mobile</div>
-              <h3>Wingstop: Road to Riyadh</h3>
-              <div class="cs"><span class="lbl">Insight</span><p>Eating wings and playing mobile games occupy the <b>same one-handed, screen-in-front moment.</b> Wingstop wasn’t competing with gaming for attention; it lives inside it.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>A three-tier strategy: an always-on platform layer, a hero tournament activation, and owned IP anchored by a <b>“Buy Wingstop, win PUBG Mobile World Cup Finals tickets”</b> mechanic across in-game, social and packaging.</p></div>
-              <div class="cs"><span class="lbl">Strategic bet</span><p>Treat the KSA gaming calendar as media: build around the Esports World Cup, the region’s record-breaking tentpole (750M viewers).</p></div>
-              <div><a class="card-link" href="https://drive.google.com/file/d/19luAjEZYqCmBUFjELkm1iNQlnP18TtTJ/view?usp=sharing" target="_blank">View strategy deck <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag">◆ Concept</span><img src="assets/wingstop.jpg" alt="Wingstop x PUBG Mobile strategy"></div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-body">
-              <div class="client">Alfa Romeo × PUBG Mobile</div>
-              <h3>The Lap</h3>
-              <div class="cs"><span class="lbl">Insight</span><p>The thrill of the perfect lap and the rush of the battle royale share the same adrenaline. <b>Speed is the universal language,</b> and Alfa Romeo's audience is already playing.</p></div>
-              <div class="cs"><span class="lbl">Idea</span><p>Alfa Romeo hosts a social media contest with PUBG Mobile, rewarding <b>8 players a chance to win a real "LAP" around Abu Dhabi's F1 circuit</b>: a shotgun seat next to a pro driver in an Alfa Romeo. In return, PUBG Mobile features the Alfa Romeo car prominently in-game for millions of players to use.</p></div>
-              <div class="cs"><span class="lbl">The mechanic</span><p>Players submit their best in-game screenshot. 8 winners selected on creativity and flair. Reactions filmed at the circuit and shared across both brands' channels.</p></div>
-              <div><a class="card-link" href="https://drive.google.com/file/d/1zyXXXMkQNdKyYDIVafY0DfOlKyyE6aI5/view?usp=sharing" target="_blank">View concept deck <span class="arw">→</span></a></div>
-            </div>
-            <div class="card-media"><span class="mtag">◆ Concept</span><img src="assets/alfaromeo.jpg" alt="Alfa Romeo x PUBG Mobile: The Lap concept"></div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="capabilities" class="dark">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="sec-title">What I Do</div>
-          <div class="sec-kicker">Strategy → Concept → Launch</div>
-        </div>
-        <div class="caps">
-          <div class="cap reveal"><div class="cnum">🎮</div><h4>Audience &amp; cultural insight</h4><p>Find the behavioural truth that lets a brand belong in gaming, not interrupt it.</p></div>
-          <div class="cap reveal"><div class="cnum">💡</div><h4>Campaign concepting</h4><p>Turn the insight into a platform-native idea, structured as story, not a media plan.</p></div>
-          <div class="cap reveal"><div class="cnum">🎙️</div><h4>Creator &amp; streaming partnerships</h4><p>Build activations around the creators and live communities the audience already trusts.</p></div>
-          <div class="cap reveal"><div class="cnum">🕹️</div><h4>Brand-into-game integration</h4><p>Design integrations that work inside the game and the wider commercial ecosystem.</p></div>
-          <div class="cap reveal"><div class="cnum">📊</div><h4>RFP &amp; pitch response</h4><p>Translate a brief into a compelling proposal and sell it to senior stakeholders.</p></div>
-          <div class="cap reveal"><div class="cnum">📹</div><h4>Real-time content strategy</h4><p>Turn a single live moment into hundreds of branded clips across every feed.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="partners" class="dark">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="sec-title">Brands &amp; Partners<br>Made Playable</div>
-          <div class="sec-kicker">Selected · Gaming × Brand</div>
-        </div>
-        <div class="logo-grid reveal">
-          <div class="logo"><img src="assets/logos/dark/blizzard.png" alt="Blizzard Entertainment"></div>
-          <div class="logo"><img src="assets/logos/dark/epic.png" alt="Epic Games"></div>
-          <div class="logo"><img src="assets/logos/dark/ea.png" alt="Electronic Arts"></div>
-          <div class="logo"><img src="assets/logos/dark/playside.png" alt="PlaySide Studios"></div>
-          <div class="logo"><img src="assets/logos/dark/intel.png" alt="Intel"></div>
-          <div class="logo"><img src="assets/logos/dark/amd.png" alt="AMD"></div>
-          <div class="logo"><img src="assets/logos/dark/redbull.png" alt="Red Bull"></div>
-          <div class="logo"><img src="assets/logos/dark/zebronics.png" alt="Zebronics"></div>
-          <div class="logo"><img src="assets/logos/dark/rooter.png" alt="Rooter"></div>
-          <div class="logo"><img src="assets/logos/dark/kfc.png" alt="KFC"></div>
-          <div class="logo"><img src="assets/logos/dark/raisingcanes.png" alt="Raising Cane's"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="sec-title">About</div>
-          <div class="sec-kicker">Profile · MENA + India</div>
-        </div>
-        <div class="about-grid">
-          <div class="about reveal">
-            <p>I’m a creative strategist working at the intersection of <strong>gaming audiences, brand marketing and live content.</strong> For a decade I’ve helped FMCG, QSR and F&amp;B brands stop treating gaming as a media buy and start treating it as culture they can earn a place in.</p>
-            <p>My work spans the full arc: the <strong>audience insight</strong> that makes a brand belong, the <strong>concept</strong> that brings it to life, and the <strong>execution</strong> through an AI-driven content engine that turns one live moment into a feed-filling campaign.</p>
-            <p>I’ve partnered with global publishers including Blizzard, Epic Games, Sony and Tencent, and brought brands like KFC, Intel, AMD and Red Bull into gaming, from pitch through to launch.</p>
-          </div>
-          <div class="facts reveal">
-            <div class="fact"><span class="k">Based</span><span class="v">Dubai, UAE</span></div>
-            <div class="fact"><span class="k">Focus</span><span class="v">Gaming × Brand Strategy</span></div>
-            <div class="fact"><span class="k">Region</span><span class="v">MENA · GCC · India</span></div>
-            <div class="fact"><span class="k">Experience</span><span class="v">10+ years</span></div>
-            <div class="fact"><span class="k">Recognition</span><span class="v">Economic Times · Brand Disruption</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="wrap">
-        <h1 class="thesis" style="font-size:clamp(40px,7vw,88px)">Let’s make<br>something <span class="playable">live</span></h1>
-        <div class="cta-row">
-          <a class="btn solid" href="mailto:joshuageorge012@gmail.com">Email me →</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/sportyjoshuageorge/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost" href="https://drive.google.com/file/d/1_S7U5-mqHLDNj31yCHITLH-XXSfizaep/view?usp=sharing" target="_blank" rel="noopener">Download résumé →</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div>
-        <p>© 2026 JOSHUA GEORGE</p>
-        <p>DUBAI · GAMING × BRAND STRATEGY</p>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/sportyjoshuageorge/" target="_blank" title="LinkedIn">LinkedIn</a>
-        <span style="color:#4a4d45">·</span>
-        <a href="mailto:joshuageorge012@gmail.com" title="Email">Email</a>
-        <span style="color:#4a4d45">·</span>
-        <a href="tel:+971585848517" title="Phone">+971 58 584 8517</a>
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="status mono"><span class="dot"></span>Based in Dubai · Working across MENA &amp; India</div>
+      <p class="eyebrow mono">Gaming &amp; esports creative strategist</p>
+      <h1 class="disp h1">I make<br>brands<br><em>playable.</em></h1>
+      <p class="lede">I help brands earn an authentic place in gaming, esports and live-streaming culture, turning audience insight into campaigns and carrying them from idea through pitch to launch.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="#work">See the work <span>→</span></a>
+        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_S7U5-mqHLDNj31yCHITLH-XXSfizaep/view?usp=sharing" target="_blank" rel="noopener">Download résumé <span>↓</span></a>
       </div>
     </div>
-  </footer>
+    <div class="hero-art" aria-hidden="true">
+      <div class="glow"></div>
+      <img src="assets/web/hero.webp" alt="">
+      <span class="hud tl"></span><span class="hud tr"></span><span class="hud bl"></span><span class="hud br"></span>
+      <div class="art-cap mono">Player 01 · BGMI / PUBG Mobile</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="scoreboard">
+      <div class="cell"><div class="num disp">100M<i>+</i></div><div class="mono lbl">Views delivered</div></div>
+      <div class="cell"><div class="num disp">10<i>+</i></div><div class="mono lbl">Years in gaming × brand</div></div>
+      <div class="cell"><div class="num disp">14<i>%</i></div><div class="mono lbl">Of KSA transactions<br>Raising Cane's</div></div>
+      <div class="cell"><div class="num disp"><i>+</i>18<i>%</i></div><div class="mono lbl">Gaming-laptop sales<br>Intel</div></div>
+    </div>
+  </div>
+</header>
 
-<script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  document.querySelectorAll('[data-asset]').forEach(a=>{
-    a.addEventListener('click',ev=>{
-      if(a.getAttribute('href')==='#'){ev.preventDefault();const t=a.innerHTML;a.textContent='↑ Add your link in the code';setTimeout(()=>{a.innerHTML=t},1400);}
-    });
-  });
-  const mobileMenu=document.querySelector('.mobile-menu');
-  const nav=document.querySelector('.nav');
-  const navlinks=document.querySelector('.navlinks');
-  if(mobileMenu){
-    mobileMenu.addEventListener('click',()=>{
-      nav.classList.toggle('active');
-      mobileMenu.classList.toggle('open');
-    });
-    document.querySelectorAll('.navlinks a').forEach(link=>{
-      link.addEventListener('click',()=>{
-        nav.classList.remove('active');
-        mobileMenu.classList.remove('open');
-      });
-    });
-  }
-</script>
+<section id="work" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="disp h2">Selected work</h2></div>
+      <p class="mono note">4 shipped campaigns · measured results</p>
+    </div>
+    <div class="work-grid">
+
+      <a class="case c-rc" href="case-study-raisingcanes.html">
+        <div class="media"><img src="assets/web/rc.webp" alt="Raising Cane's x POWR in-store watch party in KSA"><div class="case-top"><span class="mono tag">Shipped · KSA</span><span class="arrow">↗</span></div></div>
+        <div class="case-body">
+          <p class="mono client">Raising Cane's × POWR</p>
+          <h3 class="disp h3">Raising POWR in KSA</h3>
+          <p class="sum">An always-on gaming layer with the Kingdom's largest creator cohort. Built inside the stream, finished in the store.</p>
+          <div class="case-metrics">
+            <div><div class="big disp">14%</div><div class="mono lbl">Of KSA transactions during the campaign</div></div>
+            <div><div class="mid disp">25M<i>+</i></div><div class="mono lbl">Views</div></div>
+          </div>
+        <div class="cn mono">12-month always-on partnership</div>
+        </div>
+      </a>
+
+      <a class="case c-kfc" href="case-study-kfc.html">
+        <div class="media"><img src="assets/web/kfc.webp" alt="KFC Gamer's Loot Box"><div class="case-top"><span class="mono tag">Shipped · India</span><span class="arrow">↗</span></div></div>
+        <div class="case-body">
+          <p class="mono client">KFC × BGMI × OR Esports</p>
+          <h3 class="disp h3">The KFC Lootbox</h3>
+          <p class="sum">A 3D Colonel dropped into a live BGMI broadcast, tied to a real-world Lootbox meal on the KFC app.</p>
+          <div class="case-metrics">
+            <div><div class="big disp">27.1M</div><div class="mono lbl">Impressions</div></div>
+            <div><div class="mid disp">5.76M</div><div class="mono lbl">Views</div></div>
+          </div>
+          
+        <div class="cn mono win">★ Brand Disruption Awards '22 · Best small-budget campaign</div>
+        </div>
+      </a>
+
+      <a class="case c-intel" href="case-study-intel.html">
+        <div class="media"><img src="assets/web/intel.webp" alt="Intel x OR Esports"><div class="case-top"><span class="mono tag">Shipped · India</span><span class="arrow">↗</span></div></div>
+        <div class="case-body">
+          <p class="mono client">Intel × OR Esports</p>
+          <h3 class="disp h3">Intel inside the rock</h3>
+          <p class="sum">Moved the conversation from price to performance, where pros actually win.</p>
+          <div class="case-metrics">
+            <div><div class="big disp">+18%</div><div class="mono lbl">Gaming-laptop sales</div></div>
+            <div><div class="mid disp">35M<i>+</i></div><div class="mono lbl">Impressions</div></div>
+          </div>
+        <div class="cn mono">12-month team partnership</div>
+        </div>
+      </a>
+
+      <a class="case c-rooter" href="case-study-rooter.html">
+        <div class="media"><img src="assets/web/rooter.webp" alt="Rooter x OR Esports exclusive stream"><div class="case-top"><span class="mono tag">Shipped · India</span><span class="arrow">↗</span></div></div>
+        <div class="case-body">
+          <p class="mono client">Rooter × OR Esports</p>
+          <h3 class="disp h3">Rooter exclusive</h3>
+          <p class="sum">An audience-migration play that made a new streaming app the home of Legends Rise.</p>
+          <div class="case-metrics">
+            <div><div class="big disp">50M+</div><div class="mono lbl">Livestream views</div></div>
+            <div><div class="mid disp">$200K</div><div class="mono lbl">Partnership value</div></div>
+          </div>
+        <div class="cn mono">24-month exclusive platform deal</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section id="concepts" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="disp h2">Concepts</h2></div>
+      <p class="mono note">Spec work · how I think on a blank page</p>
+    </div>
+    <div class="concepts">
+      <a class="concept" href="https://drive.google.com/file/d/1V3TWrYCg9vBWw0a2O-qpyJNf1i9mC9S_/view?usp=sharing" target="_blank" rel="noopener">
+        <div class="c-img"><img src="assets/web/footlocker.webp" alt=""><span class="mono tag">Concept</span></div>
+        <p class="mono client">Footlocker × ShongXbong</p>
+        <h3>The Live Hunt</h3>
+        <p class="sum">A 12-hour live sneaker hunt across KSA and UAE where the audience steers the mission in real time.</p>
+        <span class="mono link">View concept deck ↗</span>
+      </a>
+      <a class="concept" href="https://drive.google.com/file/d/19luAjEZYqCmBUFjELkm1iNQlnP18TtTJ/view?usp=sharing" target="_blank" rel="noopener">
+        <div class="c-img"><img src="assets/web/wingstop.webp" alt=""><span class="mono tag">Concept</span></div>
+        <p class="mono client">Wingstop × PUBG Mobile</p>
+        <h3>Road to Riyadh</h3>
+        <p class="sum">Buy Wingstop, win PUBG Mobile World Cup tickets: a three-tier plan built around the Esports World Cup.</p>
+        <span class="mono link">View strategy deck ↗</span>
+      </a>
+      <a class="concept" href="https://drive.google.com/file/d/1zyXXXMkQNdKyYDIVafY0DfOlKyyE6aI5/view?usp=sharing" target="_blank" rel="noopener">
+        <div class="c-img"><img src="assets/web/alfaromeo.webp" alt=""><span class="mono tag">Concept</span></div>
+        <p class="mono client">Alfa Romeo × PUBG Mobile</p>
+        <h3>The Lap</h3>
+        <p class="sum">PUBG players win a real hot lap of Abu Dhabi's F1 circuit, and Alfa Romeo drives into the game.</p>
+        <span class="mono link">View concept deck ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="disp h2">What I do</h2></div>
+      <p class="mono note">Strategy → Concept → Launch</p>
+    </div>
+    <div class="caps">
+      <div class="cap"><span class="mono n">Strategy</span><h4>Audience &amp; cultural insight</h4><p>Find the behavioural truth that lets a brand belong in gaming, not interrupt it.</p></div>
+      <div class="cap"><span class="mono n">Concept</span><h4>Campaign concepting</h4><p>Turn the insight into a platform-native idea, structured as story, not a media plan.</p></div>
+      <div class="cap"><span class="mono n">Launch</span><h4>Creator &amp; streaming partnerships</h4><p>Build activations around the creators and live communities the audience already trusts.</p></div>
+      <div class="cap"><span class="mono n">Concept</span><h4>Brand-into-game integration</h4><p>Design integrations that work inside the game and across the wider commercial ecosystem.</p></div>
+      <div class="cap"><span class="mono n">Strategy</span><h4>RFP &amp; pitch response</h4><p>Translate a brief into a compelling proposal and sell it to senior stakeholders.</p></div>
+      <div class="cap"><span class="mono n">Launch</span><h4>Real-time content strategy</h4><p>Turn a single live moment into hundreds of branded clips across every feed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="disp h2">Brands &amp; partners</h2></div>
+      <p class="mono note">Publishers · brands · platforms</p>
+    </div>
+    <div class="logos">
+      <div class="logo"><img src="assets/logos/dark/blizzard.png" alt="Blizzard"></div>
+      <div class="logo"><img src="assets/logos/dark/epic.png" alt="Epic Games"></div>
+      <div class="logo"><img src="assets/logos/dark/ea.png" alt="Electronic Arts"></div>
+      <div class="logo"><img src="assets/logos/dark/playside.png" alt="PlaySide"></div>
+      <div class="logo"><img src="assets/logos/dark/intel.png" alt="Intel"></div>
+      <div class="logo"><img src="assets/logos/dark/amd.png" alt="AMD"></div>
+      <div class="logo"><img src="assets/logos/dark/redbull.png" alt="Red Bull"></div>
+      <div class="logo"><img src="assets/logos/dark/kfc.png" alt="KFC"></div>
+      <div class="logo"><img src="assets/logos/dark/raisingcanes.png" alt="Raising Cane's"></div>
+      <div class="logo"><img src="assets/logos/dark/rooter.png" alt="Rooter"></div>
+      <div class="logo"><img src="assets/logos/dark/zebronics.png" alt="Zebronics"></div>
+      <div class="logo logo-txt mono">+ Sony<br>+ Tencent<br>+ Zenimax</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap about">
+    <div>
+      <span class="mono idx" style="display:block;color:var(--accent);margin-bottom:22px">About</span>
+      <p class="disp pull">Joshua George. Creative strategist for gaming &amp; esports, based in <em>Dubai</em>.</p>
+    </div>
+    <div class="about-right">
+      <p>I'm a creative strategist working where gaming audiences, brand marketing and live content meet. For a decade I've helped QSR, FMCG and tech brands stop treating gaming as a media buy and start treating it as culture.</p>
+      <p>I've partnered with publishers including Blizzard, Epic Games, Sony and Tencent, and brought brands like KFC, Intel, AMD and Red Bull into gaming, from pitch through to launch.</p>
+      <dl class="facts">
+        <div><dt class="mono">Based</dt><dd>Dubai, UAE</dd></div>
+        <div><dt class="mono">Markets</dt><dd>MENA · GCC · India</dd></div>
+        <div><dt class="mono">Experience</dt><dd>10+ years</dd></div>
+        <div><dt class="mono">Recognition</dt><dd>Economic Times · Brand Disruption '22</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="mono idx">Contact</span>
+    <h2 class="disp mega">Let's <em>talk.</em></h2>
+    <a class="mail" href="mailto:joshuageorge012@gmail.com">joshuageorge012@gmail.com <span>↗</span></a>
+    <div class="actions">
+      <a class="btn btn-accent" href="mailto:joshuageorge012@gmail.com">Email me <span>→</span></a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/sportyjoshuageorge/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+      <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_S7U5-mqHLDNj31yCHITLH-XXSfizaep/view?usp=sharing" target="_blank" rel="noopener">Résumé <span>↓</span></a>
+    </div>
+  </div>
+  <footer class="wrap foot mono"><span>© 2026 Joshua George</span><span>Dubai · Gaming × brand strategy</span><span>+971 58 584 8517</span></footer>
+</section>
+
 </body>
 </html>

@@ -2,202 +2,126 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raising Cane's x POWR: Raising POWR In KSA | Joshua George</title>
-<meta name="description" content="How Raising Cane's turned an always-on gaming partnership with POWR into real commercial impact in Saudi Arabia: 25M+ views, 40M+ impressions and 14% of KSA transactions in five months.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raising POWR in KSA · Raising Cane's × POWR | Joshua George</title>
+<meta name="description" content="How a challenger QSR brand built an always-on gaming layer with the Kingdom's largest creator cohort, and turned gaming culture into product.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --cream:#ffffff;
-    --ink:#000000;
-    --ink-soft:#222222;
-    --muted:#666666;
-    --dark:#1a1a1a;
-    --dark-2:#0f0f0f;
-    --line:#eeeeee;
-    --accent:#CC0000;
-    --maxw:900px;
-    --ease-out:cubic-bezier(0.23,1,0.32,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--cream);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
-  body::before{content:"";position:fixed;top:-20%;right:-10%;width:400px;height:400px;background:rgba(204,0,0,.03);border-radius:50%;pointer-events:none;z-index:0}
-  body::after{content:"";position:fixed;bottom:-15%;left:-5%;width:300px;height:300px;background:rgba(204,0,0,.02);border-radius:50%;pointer-events:none;z-index:0}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
 
-  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}
-  .nav::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:14px;background:linear-gradient(to bottom,rgba(20,20,15,.05),transparent);pointer-events:none}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .logo-word{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:16px;letter-spacing:-.3px}
-  .back-link{font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:100px;border:1px solid var(--ink);transition:border-color .2s ease,background-color .2s ease,color .2s ease;display:inline-flex;align-items:center;gap:6px}
-  .back-link:hover{border-color:var(--dark);background:var(--ink);color:var(--cream)}
+:root{--bg:#0A0A0B;--bg-2:#101012;--bg-3:#17171A;--line:rgba(243,241,234,.09);--line-2:rgba(243,241,234,.18);
+--text:#F3F1EA;--text-2:#A9A79F;--text-3:#6F6E69;--accent:#D0FF4A;--accent-ink:#0A0A0B;
+--display:'Archivo',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.23,1,.32,1);--max:1240px;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--display);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+b{color:var(--text);font-weight:650}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.mono{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.disp{font-family:var(--display);font-stretch:125%;font-weight:850;text-transform:uppercase;letter-spacing:-.02em;line-height:.92}
+.num i{font-style:normal;color:var(--brand)}
 
-  .hero{padding:60px 0 40px}
-  .breadcrumb{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:20px}
-  h1{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:clamp(36px,7vw,56px);line-height:1.1;letter-spacing:-.5px;margin-bottom:16px;color:var(--accent)}
-  .tagline{font-size:clamp(17px,2vw,20px);color:var(--ink-soft);font-weight:500;margin-bottom:32px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,10,11,.78);backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.brand{font-stretch:125%;font-weight:800;font-size:15px;text-transform:uppercase}
+.brand span{color:var(--accent)}
+.switch{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.switch a{padding:8px 14px;border-radius:100px;border:1px solid var(--line-2);color:var(--text-2);white-space:nowrap;font-size:10.5px;transition:border-color .2s ease,color .2s ease}
+.back{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:100px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;white-space:nowrap}
 
-  .image-container{position:relative;width:100%;max-width:100%;margin:50px 0 60px;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.3)}
-  .image-container img{display:block;width:100%;height:auto}
+.cs{position:relative;padding:96px 0 40px;border-bottom:1px solid var(--line-2)}
+.cs::before{content:"";position:absolute;right:-12%;top:-4%;width:60%;height:620px;background:radial-gradient(closest-side,rgba(var(--brand-t),.12),transparent 72%);pointer-events:none}
+.crumb{display:flex;flex-wrap:wrap;gap:14px;color:var(--text-2);margin-bottom:26px}
+.crumb span{color:var(--brand)}
+.cs-title{font-size:clamp(44px,7.4vw,112px);color:var(--text);text-wrap:balance;max-width:14ch}
+.lede{margin-top:28px;max-width:62ch;font-size:clamp(17px,1.6vw,21px);color:var(--text-2);line-height:1.5}
+.meta{display:grid;grid-template-columns:repeat(5,1fr);margin-top:48px;border-top:1px solid var(--line-2)}
+.meta div{padding:18px 20px 20px 0;border-bottom:1px solid var(--line)}
+.meta div+div{padding-left:20px;border-left:1px solid var(--line)}
+.meta dt{color:var(--text-3);font-size:10.5px}
+.meta dd{margin-top:8px;font-weight:600;font-size:15px}
+.cs-hero{position:relative;margin-top:48px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/8;max-width:100%;background:var(--bg-2)}
+.cs-hero img{width:100%;height:100%;object-fit:cover}
+#kfc .cs-hero img{object-position:center 22%}#intel .cs-hero img{object-position:center 30%}
+.cs-hero figcaption{position:absolute;left:18px;bottom:16px;padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.72);border:1px solid var(--line-2);font-size:10.5px;color:var(--text)}
+.film{position:absolute;right:18px;bottom:16px;padding:10px 16px;border-radius:100px;background:var(--brand);color:#0A0A0B;font-weight:700}
+.res-head{margin-top:64px;color:var(--brand)}
+.scoreboard{display:grid;grid-template-columns:repeat(4,1fr);margin-top:16px;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line)}
+.cell{padding:28px 24px 30px;border-left:1px solid var(--line)}
+.cell:first-child{border-left:0;padding-left:0}
+.num{font-size:clamp(36px,4.2vw,62px);font-variant-numeric:tabular-nums}
+.cell:first-child .num{color:var(--brand)}
+.cell .lbl{margin-top:12px;color:var(--text-3);font-size:10.5px;line-height:1.5}
+.extra{margin-top:14px;color:var(--text-3);font-size:10.5px}
+.story{margin-top:72px;display:grid;gap:56px}
+.row{display:grid;grid-template-columns:260px 1fr;gap:40px}
+.row .lbl{color:var(--brand);position:sticky;top:96px;align-self:start;padding-top:6px;border-top:1px solid rgba(var(--brand-t),.5);font-size:11.5px}
+.body{max-width:66ch;border-top:1px solid var(--line);padding-top:4px}
+.body p{font-size:18px;line-height:1.65;color:var(--text-2);margin-top:14px}
+.steps{list-style:none;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.steps li{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--bg-2);font-size:15px;color:var(--text);display:flex;gap:12px}
+.steps li::before{content:"";flex:none;width:6px;height:6px;margin-top:8px;border-radius:50%;background:var(--brand)}
+.gallery{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--bg-2)}
+.gallery img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.gallery figcaption{padding:12px 14px;color:var(--text-3);font-size:10.5px}
+.pull{margin-top:80px;padding:40px 0 0;border-top:1px solid rgba(var(--brand-t),.55)}
+.pull p{font-stretch:112%;font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.12;letter-spacing:-.02em;max-width:28ch;text-wrap:balance}
+.next{margin-top:80px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;padding:30px 0;border-top:1px solid var(--line-2);color:var(--text-2)}
+.next .disp{font-size:clamp(26px,3.4vw,46px);color:var(--text)}
+.next .arrow{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2);font-size:20px;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;padding-bottom:36px;color:var(--text-3)}
+@media (hover:hover) and (pointer:fine){
+ .switch a:hover{border-color:var(--text);color:var(--text)}
+ .next:hover .arrow{background:var(--brand);color:#0A0A0B;border-color:var(--brand)}
+}
+@media (max-width:960px){
+ .switch{display:none}
+ .meta{grid-template-columns:1fr 1fr}
+ .meta div,.meta div+div{padding:16px 12px 16px 0;border-left:0}
+ .cs-hero{aspect-ratio:4/3}
+ .scoreboard{grid-template-columns:1fr 1fr}
+ .cell{padding:22px 14px}.cell:nth-child(3){border-left:0;padding-left:0}.cell:nth-child(n+3){border-top:1px solid var(--line)}
+ .row{grid-template-columns:1fr;gap:12px}.row .lbl{position:static}
+ .steps,.gallery{grid-template-columns:1fr}
+ .film{left:18px;right:auto;bottom:60px}
+ .next{grid-template-columns:1fr auto}.next .mono{grid-column:1/-1}
+}
+@media (max-width:560px){.wrap{padding:0 20px}.cs{padding-top:64px}.body p{font-size:16.5px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-  .content{margin:60px 0}
-  .section{margin-bottom:50px}
-  .section h2{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:28px;line-height:1.15;letter-spacing:-.3px;margin-bottom:16px;text-transform:uppercase;color:var(--accent)}
-  .section p{margin-bottom:14px;color:var(--ink-soft);line-height:1.7}
-  .section p:last-child{margin-bottom:0}
-  .section strong{color:var(--accent);font-weight:700}
-
-  .results{background:#fff;border:2px solid var(--line);border-radius:16px;padding:40px;margin:50px 0;position:relative;overflow:hidden}
-  .results::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent)}
-  .results::after{content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:rgba(204,0,0,.04);border-radius:50%}
-  .results h3{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:18px;letter-spacing:-.2px;text-transform:uppercase;margin-bottom:24px;color:var(--accent)}
-  .stat-row{display:flex;gap:24px;margin-bottom:20px;flex-wrap:wrap}
-  .stat{flex:1;min-width:140px}
-  .stat .num{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:32px;line-height:1;letter-spacing:-1px}
-  .stat .label{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-top:6px}
-
-  .highlight-box{background:#fff;border-left:3px solid var(--accent);padding:24px;margin:30px 0;border-radius:8px}
-  .highlight-box p{margin:0;font-weight:600;color:var(--ink)}
-
-  .cta{margin-top:60px;padding-top:40px;border-top:1.5px solid var(--line);text-align:center}
-  .cta p{font-size:15px;color:var(--ink-soft);margin-bottom:20px}
-  .btn{font-weight:700;font-size:14px;padding:15px 28px;border-radius:100px;background:var(--ink);color:var(--cream);border:1.5px solid var(--ink);transition:transform .16s var(--ease-out),background-color .2s ease,border-color .2s ease;display:inline-block;text-transform:uppercase;letter-spacing:.5px}
-  .btn:active{transform:scale(.97)}
-  .btn:hover{background:#000;border-color:#000}
-
-  @media(max-width:640px){
-    .section h2{font-size:24px}
-    .stat-row{gap:16px}
-    .stat .num{font-size:26px}
-  }
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  @media(prefers-reduced-transparency:reduce){.nav{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}.nav::after{display:none}}
-  @media(prefers-contrast:more){.nav::after{display:none}.nav{border-bottom:1px solid var(--ink)}}
-</style>
+.switch a[aria-current]{border-color:var(--brand);color:var(--text)}</style>
 </head>
 <body>
+<nav class="nav"><div class="wrap nav-in">
+  <a class="brand" href="index.html">Joshua George<span>.</span></a>
+  <div class="switch"><a class="mono" href="case-study-raisingcanes.html" aria-current="page">Raising Cane's</a><a class="mono" href="case-study-kfc.html">KFC</a><a class="mono" href="case-study-intel.html">Intel</a><a class="mono" href="case-study-rooter.html">Rooter</a></div>
+  <a class="back" href="index.html#work">← All work</a>
+</div></nav>
 
-<nav class="nav">
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
-    <a href="index.html" class="logo-word">JOSHUA GEORGE</a>
-    <a href="index.html" class="back-link">← Back</a>
+<article class="cs" id="raising-canes" style="--brand:#FF5A55;--brand-t:255,90,85">
+  <div class="wrap">
+    <p class="mono crumb"><span>Case study 01 / 04</span>Raising Cane's × POWR</p>
+    <h1 class="disp cs-title">Raising POWR in KSA</h1>
+    <p class="lede">How a challenger QSR brand built an always-on gaming layer with the Kingdom's largest creator cohort, and turned gaming culture into product.</p>
+    <dl class="meta"><div><dt class="mono">Client</dt><dd>Raising Cane's</dd></div><div><dt class="mono">Partner</dt><dd>POWR</dd></div><div><dt class="mono">Market</dt><dd>Saudi Arabia</dd></div><div><dt class="mono">Duration</dt><dd>12 months · live</dd></div><div><dt class="mono">My role</dt><dd>Strategy & business lead</dd></div></dl>
+    <figure class="cs-hero"><img src="assets/web/rc_hero.webp" alt="Creator content on the Raising Cane's Challenge set"><figcaption class="mono">Creator content on the Raising Cane's Challenge set</figcaption></figure>
+    <div class="res-head mono">Results · 5 months into a 12-month partnership</div>
+    <div class="scoreboard"><div class="cell"><div class="num disp">14<i>%</i></div><div class="mono lbl">Of KSA transactions during the campaign</div></div><div class="cell"><div class="num disp">+68<i>%</i></div><div class="mono lbl">More traction than Cane's own content</div></div><div class="cell"><div class="num disp">25M<i>+</i></div><div class="mono lbl">Views</div></div><div class="cell"><div class="num disp">147M<i>+</i></div><div class="mono lbl">Combined creator reach</div></div></div>
+    <div class="extra mono">40M+ Impressions · 250K+ Messages</div>
+    <div class="story"><div class="row"><h2 class="mono lbl">The challenge</h2><div class="body"><p>Raising Cane's had been in Saudi Arabia for ten years with 26 stores, yet aided awareness of the brand remained very low. Among its core Gen Z audience, the people spending hours a day inside gaming and esports, the brand barely registered.</p><p>The insight was hard to ignore: <b>59% of Raising Cane's audience already watch gaming content on social</b>. Gaming wasn't a subculture to break into. It was where the audience already spent its attention.</p></div></div>
+<div class="row"><h2 class="mono lbl">The idea</h2><div class="body"><p>Instead of one-off activations, we built an <b>always-on gaming layer</b> that sat alongside every Raising Cane's campaign through the year, across three layers: app installs, the World Cup moment, and trial generation.</p><p>We partnered with <b>POWR</b>, the largest gaming creator cohort in KSA: <b>16 creator channels with 147M+ combined reach</b> across YouTube, Kick, TikTok, Snapchat, Instagram and Discord. We didn't buy gaming media. We integrated the brand into gaming culture.</p></div></div>
+<div class="row"><h2 class="mono lbl">The execution</h2><div class="body"><p>Six connected mechanics, built inside the stream and finished in the store:</p><ul class="steps"><li>Online jersey design competition</li><li>In-store watch parties for live matches</li><li>TikTok challenge videos with creators</li><li>In-store creator meet-and-greets</li><li>Snapchat taste-test campaigns</li><li>Scan-and-win competitions with creator codes</li></ul></div></div></div>
+    <div class="gallery"><figure><img src="assets/web/rc_g1.webp" alt="Orders delivered by creators on live streams"><figcaption class="mono">Orders delivered by creators on live streams</figcaption></figure><figure><img src="assets/web/rc_g2.webp" alt="POWR creators in-store"><figcaption class="mono">POWR creators in-store</figcaption></figure><figure><img src="assets/web/rc_g3.webp" alt="The POWR creator squad"><figcaption class="mono">The POWR creator squad</figcaption></figure></div>
+    <div class="story"><div class="row"><h2 class="mono lbl">The commercial impact</h2><div class="body"><p>It didn't just build awareness. It moved product. Creator codes and promo mechanics turned attention into transactions, and generated more buzz and search interest than any other activation format the brand ran.</p><p>The audience was exactly who it was built for: <b>Saudi Gen Z males aged 16 to 25</b>, where <b>62% watch content from gamer creators</b> and <b>7 in 10 watch it every week</b>. On YouTube and Kick alone, 3.27M+ views and 273K watch hours add up to more than 31 years of continuous viewing.</p></div></div></div>
+    <a class="next" href="case-study-kfc.html"><span class="mono">Next case</span><span class="disp">The KFC Lootbox</span><span class="arrow">→</span></a>
   </div>
-</nav>
-
-<div class="wrap">
-  <section class="hero">
-    <div class="breadcrumb">Raising Cane's × POWR</div>
-    <h1>Raising POWR In KSA</h1>
-    <p class="tagline">How Raising Cane's built an always-on gaming layer with POWR in Saudi Arabia and turned gaming culture into product: 25M+ views and 14% of KSA transactions, just five months into a twelve-month partnership.</p>
-  </section>
-
-  <div class="image-container">
-    <img src="../assets/raisingcanes.jpg" alt="Raising Cane's x POWR partnership activation">
-  </div>
-
-  <div class="content">
-
-    <section class="section">
-      <h2>The Challenge</h2>
-      <p>Raising Cane's had been in Saudi Arabia for ten years with 26 stores, yet aided awareness of the brand remained very low. Among its core Gen Z audience, the same people spending hours a day inside gaming and esports, Raising Cane's barely registered.</p>
-      <p>The insight was hard to ignore: <strong>59% of Raising Cane's audience already watch gaming content on social</strong>. Gaming wasn't a subculture the brand had to break into, it was where the audience already spent its attention. Campaign bursts wouldn't move the needle. The brand needed permanent presence, not temporary visibility.</p>
-    </section>
-
-    <section class="section">
-      <h2>The Idea</h2>
-      <p>Instead of relying on one-off brand activations, we built an <strong>always-on gaming layer</strong>: a permanent presence that sat alongside every Raising Cane's campaign through the year, structured across three layers spanning app installs, the World Cup moment, and trial generation.</p>
-      <p>We partnered the brand with <strong>POWR</strong>, the largest gaming creator cohort in KSA: <strong>16 creator channels with 147M+ combined reach</strong> across the platforms where Saudi gaming actually lives, from YouTube and Kick to TikTok, Snapchat, Instagram and Discord.</p>
-      <p>The principle was simple. We didn't buy gaming media, we <strong>integrated Raising Cane's into gaming culture</strong>, so the brand showed up as a peer in the community rather than an ad interrupting it.</p>
-    </section>
-
-    <section class="section">
-      <h2>The Execution</h2>
-      <p>The idea came to life through <strong>six connected mechanics</strong>, built inside the stream and finished in the store:</p>
-      <ul style="margin:16px 0;padding-left:20px;color:var(--ink-soft)">
-        <li style="margin-bottom:8px">Online jersey design competition</li>
-        <li style="margin-bottom:8px">In-store watch parties for live matches</li>
-        <li style="margin-bottom:8px">TikTok challenge videos with creators</li>
-        <li style="margin-bottom:8px">In-store creator meet-and-greets</li>
-        <li style="margin-bottom:8px">Snapchat taste-test campaigns</li>
-        <li style="margin-bottom:8px">Scan-and-win competitions powered by creator codes</li>
-      </ul>
-      <p>Orders were delivered by creators on live streams, promo codes moved fans from feed to store, and branded meet-ups turned viewers into customers. One continuous conversation ran the whole way through: <strong>stream to social to store to creator to community to purchase</strong>.</p>
-    </section>
-
-    <div class="results">
-      <h3>Results: 5 Months Into a 12-Month Partnership</h3>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="num">25M+</div>
-          <div class="label">Views</div>
-        </div>
-        <div class="stat">
-          <div class="num">40M+</div>
-          <div class="label">Impressions</div>
-        </div>
-      </div>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="num">250K+</div>
-          <div class="label">Messages &amp; Conversations</div>
-        </div>
-        <div class="stat">
-          <div class="num">147M+</div>
-          <div class="label">Combined Creator Reach</div>
-        </div>
-      </div>
-    </div>
-
-    <section class="section" style="margin-top:50px">
-      <h2>The Commercial Impact</h2>
-      <p>It didn't just build awareness, it moved product. Creator-code and promo mechanics turned attention into transactions, generating stronger buzz and search interest than any other activation format Raising Cane's ran.</p>
-    </section>
-
-    <div class="results">
-      <h3>It Moved Product</h3>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="num">14%</div>
-          <div class="label">of All KSA Transactions During the Campaign</div>
-        </div>
-        <div class="stat">
-          <div class="num">+68%</div>
-          <div class="label">More Traction Than Cane's Own Content</div>
-        </div>
-      </div>
-    </div>
-
-    <section class="section" style="margin-top:50px">
-      <h2>It Reached Exactly Who It Was Built For</h2>
-      <p>The collaboration over-indexed among <strong>Saudi Gen Z males aged 16 to 25</strong>, the exact audience the brand needed to win. In that group, gaming content isn't niche, it's habitual: <strong>62% watch content from gamer creators</strong> and <strong>7 in 10 watch it at least once a week</strong>.</p>
-      <div class="highlight-box">
-        <p>The scale in context: 3.27M+ views and 273K watch hours on YouTube and Kick alone add up to more than 31 years of continuous viewing time, delivered in just five months.</p>
-      </div>
-    </section>
-
-    <section class="section" style="margin-top:50px">
-      <h2>The Strategic Shift</h2>
-      <p>This partnership transformed gaming from a one-time activation channel into an <strong>always-on marketing layer</strong> for Raising Cane's. Instead of competing with category leaders on store count or tradition, the brand built permanent cultural relevance with the audience that mattered most.</p>
-
-      <div class="highlight-box">
-        <p>"Gaming isn't a campaign channel. It's a lifestyle channel. The brands winning aren't the ones with the loudest one-week burst; they're the ones present every day."</p>
-      </div>
-
-      <p>By embedding Raising Cane's into POWR's ecosystem, the brand wasn't fighting for attention. It was part of the infrastructure. Gamers didn't see Raising Cane's as a sponsor interrupting their entertainment. They saw it as a peer in their community.</p>
-    </section>
-
-  </div>
-
-  <div class="cta">
-    <p>Want to turn your brand into a permanent presence in your audience's ecosystem?</p>
-    <a href="index.html#contact" class="btn">Let's Talk</a>
-  </div>
-
-</div>
-
+</article>
+<footer class="wrap foot mono"><span>© 2026 Joshua George</span><span>Dubai · Gaming × brand strategy</span><span>joshuageorge012@gmail.com</span></footer>
 </body>
 </html>

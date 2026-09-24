@@ -2,174 +2,126 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intel x OR Esports: Intel Enters India | Joshua George</title>
-<meta name="description" content="How Intel re-established its position as the processor of choice for competitive gamers, driving 18% increase in gaming laptop sales.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intel inside the rock · Intel × OR Esports | Joshua George</title>
+<meta name="description" content="How Intel re-established itself as the processor of choice for competitive gamers, and drove measurable sales growth for partner retailers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --cream:#ffffff;
-    --ink:#0071C5;
-    --ink-soft:#333333;
-    --muted:#666666;
-    --dark:#1a1a1a;
-    --dark-2:#0f0f0f;
-    --line:#e6f0ff;
-    --accent:#0071C5;
-    --maxw:900px;
-    --ease-out:cubic-bezier(0.23,1,0.32,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--cream);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
-  body::before{content:"";position:fixed;top:-20%;right:-10%;width:400px;height:400px;background:rgba(0,113,197,.03);border-radius:50%;pointer-events:none;z-index:0}
-  body::after{content:"";position:fixed;bottom:-15%;left:-5%;width:300px;height:300px;background:rgba(0,113,197,.02);border-radius:50%;pointer-events:none;z-index:0}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
 
-  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}
-  .nav::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:14px;background:linear-gradient(to bottom,rgba(20,20,15,.05),transparent);pointer-events:none}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .logo-word{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:16px;letter-spacing:-.3px}
-  .back-link{font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:100px;border:1px solid var(--ink);transition:border-color .2s ease,background-color .2s ease,color .2s ease;display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
-  .back-link:hover{border-color:var(--ink);background:var(--ink);color:var(--cream)}
+:root{--bg:#0A0A0B;--bg-2:#101012;--bg-3:#17171A;--line:rgba(243,241,234,.09);--line-2:rgba(243,241,234,.18);
+--text:#F3F1EA;--text-2:#A9A79F;--text-3:#6F6E69;--accent:#D0FF4A;--accent-ink:#0A0A0B;
+--display:'Archivo',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.23,1,.32,1);--max:1240px;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--display);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+b{color:var(--text);font-weight:650}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.mono{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.disp{font-family:var(--display);font-stretch:125%;font-weight:850;text-transform:uppercase;letter-spacing:-.02em;line-height:.92}
+.num i{font-style:normal;color:var(--brand)}
 
-  .hero{padding:60px 0 40px}
-  .breadcrumb{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:20px}
-  h1{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:clamp(36px,7vw,56px);line-height:1.1;letter-spacing:-.5px;margin-bottom:16px;color:var(--accent)}
-  .tagline{font-size:clamp(17px,2vw,20px);color:var(--ink-soft);font-weight:500;margin-bottom:32px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,10,11,.78);backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.brand{font-stretch:125%;font-weight:800;font-size:15px;text-transform:uppercase}
+.brand span{color:var(--accent)}
+.switch{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.switch a{padding:8px 14px;border-radius:100px;border:1px solid var(--line-2);color:var(--text-2);white-space:nowrap;font-size:10.5px;transition:border-color .2s ease,color .2s ease}
+.back{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:100px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;white-space:nowrap}
 
-  .image-container{position:relative;width:100%;max-width:100%;margin:50px 0 60px;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.3)}
-  .image-container img{display:block;width:100%;height:auto}
+.cs{position:relative;padding:96px 0 40px;border-bottom:1px solid var(--line-2)}
+.cs::before{content:"";position:absolute;right:-12%;top:-4%;width:60%;height:620px;background:radial-gradient(closest-side,rgba(var(--brand-t),.12),transparent 72%);pointer-events:none}
+.crumb{display:flex;flex-wrap:wrap;gap:14px;color:var(--text-2);margin-bottom:26px}
+.crumb span{color:var(--brand)}
+.cs-title{font-size:clamp(44px,7.4vw,112px);color:var(--text);text-wrap:balance;max-width:14ch}
+.lede{margin-top:28px;max-width:62ch;font-size:clamp(17px,1.6vw,21px);color:var(--text-2);line-height:1.5}
+.meta{display:grid;grid-template-columns:repeat(5,1fr);margin-top:48px;border-top:1px solid var(--line-2)}
+.meta div{padding:18px 20px 20px 0;border-bottom:1px solid var(--line)}
+.meta div+div{padding-left:20px;border-left:1px solid var(--line)}
+.meta dt{color:var(--text-3);font-size:10.5px}
+.meta dd{margin-top:8px;font-weight:600;font-size:15px}
+.cs-hero{position:relative;margin-top:48px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/8;max-width:100%;background:var(--bg-2)}
+.cs-hero img{width:100%;height:100%;object-fit:cover}
+#kfc .cs-hero img{object-position:center 22%}#intel .cs-hero img{object-position:center 30%}
+.cs-hero figcaption{position:absolute;left:18px;bottom:16px;padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.72);border:1px solid var(--line-2);font-size:10.5px;color:var(--text)}
+.film{position:absolute;right:18px;bottom:16px;padding:10px 16px;border-radius:100px;background:var(--brand);color:#0A0A0B;font-weight:700}
+.res-head{margin-top:64px;color:var(--brand)}
+.scoreboard{display:grid;grid-template-columns:repeat(4,1fr);margin-top:16px;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line)}
+.cell{padding:28px 24px 30px;border-left:1px solid var(--line)}
+.cell:first-child{border-left:0;padding-left:0}
+.num{font-size:clamp(36px,4.2vw,62px);font-variant-numeric:tabular-nums}
+.cell:first-child .num{color:var(--brand)}
+.cell .lbl{margin-top:12px;color:var(--text-3);font-size:10.5px;line-height:1.5}
+.extra{margin-top:14px;color:var(--text-3);font-size:10.5px}
+.story{margin-top:72px;display:grid;gap:56px}
+.row{display:grid;grid-template-columns:260px 1fr;gap:40px}
+.row .lbl{color:var(--brand);position:sticky;top:96px;align-self:start;padding-top:6px;border-top:1px solid rgba(var(--brand-t),.5);font-size:11.5px}
+.body{max-width:66ch;border-top:1px solid var(--line);padding-top:4px}
+.body p{font-size:18px;line-height:1.65;color:var(--text-2);margin-top:14px}
+.steps{list-style:none;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.steps li{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--bg-2);font-size:15px;color:var(--text);display:flex;gap:12px}
+.steps li::before{content:"";flex:none;width:6px;height:6px;margin-top:8px;border-radius:50%;background:var(--brand)}
+.gallery{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--bg-2)}
+.gallery img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.gallery figcaption{padding:12px 14px;color:var(--text-3);font-size:10.5px}
+.pull{margin-top:80px;padding:40px 0 0;border-top:1px solid rgba(var(--brand-t),.55)}
+.pull p{font-stretch:112%;font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.12;letter-spacing:-.02em;max-width:28ch;text-wrap:balance}
+.next{margin-top:80px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;padding:30px 0;border-top:1px solid var(--line-2);color:var(--text-2)}
+.next .disp{font-size:clamp(26px,3.4vw,46px);color:var(--text)}
+.next .arrow{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2);font-size:20px;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;padding-bottom:36px;color:var(--text-3)}
+@media (hover:hover) and (pointer:fine){
+ .switch a:hover{border-color:var(--text);color:var(--text)}
+ .next:hover .arrow{background:var(--brand);color:#0A0A0B;border-color:var(--brand)}
+}
+@media (max-width:960px){
+ .switch{display:none}
+ .meta{grid-template-columns:1fr 1fr}
+ .meta div,.meta div+div{padding:16px 12px 16px 0;border-left:0}
+ .cs-hero{aspect-ratio:4/3}
+ .scoreboard{grid-template-columns:1fr 1fr}
+ .cell{padding:22px 14px}.cell:nth-child(3){border-left:0;padding-left:0}.cell:nth-child(n+3){border-top:1px solid var(--line)}
+ .row{grid-template-columns:1fr;gap:12px}.row .lbl{position:static}
+ .steps,.gallery{grid-template-columns:1fr}
+ .film{left:18px;right:auto;bottom:60px}
+ .next{grid-template-columns:1fr auto}.next .mono{grid-column:1/-1}
+}
+@media (max-width:560px){.wrap{padding:0 20px}.cs{padding-top:64px}.body p{font-size:16.5px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-  .content{margin:60px 0}
-  .section{margin-bottom:50px}
-  .section h2{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:28px;line-height:1.15;letter-spacing:-.3px;margin-bottom:16px;text-transform:uppercase;color:var(--accent)}
-  .section p{margin-bottom:14px;color:var(--ink-soft);line-height:1.7}
-  .section p:last-child{margin-bottom:0}
-  .section strong{color:var(--accent);font-weight:700}
-
-  .results{background:#fff;border:2px solid var(--line);border-radius:16px;padding:40px;margin:50px 0;position:relative;overflow:hidden}
-  .results::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent)}
-  .results::after{content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:rgba(0,113,197,.04);border-radius:50%}
-  .results h3{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:18px;letter-spacing:-.2px;text-transform:uppercase;margin-bottom:24px;color:var(--accent)}
-  .stat-row{display:flex;gap:24px;margin-bottom:20px;flex-wrap:wrap}
-  .stat{flex:1;min-width:140px}
-  .stat .num{font-family:'Archivo Expanded','Archivo',sans-serif;font-weight:900;font-size:32px;line-height:1;letter-spacing:-1px}
-  .stat .label{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-top:6px}
-
-  .insight-box{background:#fff;border-left:3px solid var(--accent);padding:24px;margin:30px 0;border-radius:8px}
-  .insight-box p{color:var(--accent);line-height:1.8;margin:0;font-weight:600}
-  .insight-box strong{color:var(--accent);font-weight:700}
-
-  .cta{margin-top:60px;padding-top:40px;border-top:1.5px solid var(--line);text-align:center}
-  .cta p{font-size:15px;color:var(--ink-soft);margin-bottom:20px}
-  .btn{font-weight:700;font-size:14px;padding:15px 28px;border-radius:100px;background:var(--ink);color:var(--cream);border:1.5px solid var(--ink);transition:transform .16s var(--ease-out),background-color .2s ease,border-color .2s ease;display:inline-block;text-transform:uppercase;letter-spacing:.5px}
-  .btn:active{transform:scale(.97)}
-  .btn:hover{background:#000;border-color:#000}
-
-  @media(max-width:640px){
-    .section h2{font-size:24px}
-    .stat-row{gap:16px}
-    .stat .num{font-size:26px}
-  }
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  @media(prefers-reduced-transparency:reduce){.nav{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}.nav::after{display:none}}
-  @media(prefers-contrast:more){.nav::after{display:none}.nav{border-bottom:1px solid var(--ink)}}
-</style>
+.switch a[aria-current]{border-color:var(--brand);color:var(--text)}</style>
 </head>
 <body>
+<nav class="nav"><div class="wrap nav-in">
+  <a class="brand" href="index.html">Joshua George<span>.</span></a>
+  <div class="switch"><a class="mono" href="case-study-raisingcanes.html">Raising Cane's</a><a class="mono" href="case-study-kfc.html">KFC</a><a class="mono" href="case-study-intel.html" aria-current="page">Intel</a><a class="mono" href="case-study-rooter.html">Rooter</a></div>
+  <a class="back" href="index.html#work">← All work</a>
+</div></nav>
 
-<nav class="nav">
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
-    <a href="index.html" class="logo-word">JOSHUA GEORGE</a>
-    <a href="index.html" class="back-link">← Back</a>
+<article class="cs" id="intel" style="--brand:#00C7FD;--brand-t:0,199,253">
+  <div class="wrap">
+    <p class="mono crumb"><span>Case study 03 / 04</span>Intel × OR Esports</p>
+    <h1 class="disp cs-title">Intel inside the rock</h1>
+    <p class="lede">How Intel re-established itself as the processor of choice for competitive gamers, and drove measurable sales growth for partner retailers.</p>
+    <dl class="meta"><div><dt class="mono">Client</dt><dd>Intel India</dd></div><div><dt class="mono">Partner</dt><dd>OR Esports</dd></div><div><dt class="mono">Market</dt><dd>India</dd></div><div><dt class="mono">Duration</dt><dd>12 months</dd></div><div><dt class="mono">My role</dt><dd>Partnership strategy & creative</dd></div></dl>
+    <figure class="cs-hero"><img src="assets/web/intel.webp" alt="Intel × OR Esports, Gaming Technology Partner"><figcaption class="mono">Intel × OR Esports, Gaming Technology Partner</figcaption></figure>
+    <div class="res-head mono">Results · 12-month partnership</div>
+    <div class="scoreboard"><div class="cell"><div class="num disp">+18<i>%</i></div><div class="mono lbl">Gaming-laptop sales</div></div><div class="cell"><div class="num disp">35M<i>+</i></div><div class="mono lbl">Campaign impressions</div></div><div class="cell"><div class="num disp">18M<i>+</i></div><div class="mono lbl">Video views</div></div><div class="cell"><div class="num disp">12</div><div class="mono lbl">Months always-on</div></div></div>
+    
+    <div class="story"><div class="row"><h2 class="mono lbl">The challenge</h2><div class="body"><p>Intel was known for performance but losing mindshare in India's gaming community. AMD's lower price point made it the default for budget-conscious gamers building their first competitive rig.</p><p>The problem wasn't technology. It was perception: Intel read as premium-priced, AMD as value. Intel had to move the conversation from price to performance, in the place gamers actually decide: esports.</p></div></div>
+<div class="row"><h2 class="mono lbl">The idea</h2><div class="body"><p>Put Intel where performance matters most. A 12-month partnership with <b>OR Esports</b> used elite players to prove a simple truth: competitive gaming is won in milliseconds, and hardware makes a measurable difference.</p><p>The shift: from <b>"Intel is expensive"</b> to <b>"Intel is what pros use"</b>.</p></div></div>
+<div class="row"><h2 class="mono lbl">The execution</h2><div class="body"><p>Intel became an integrated partner across the OR Esports ecosystem:</p><ul class="steps"><li>Branding on team jerseys and at tournament appearances</li><li>Year-round creator content with pro players on Intel-powered rigs</li><li>Live-stream mentions during competitive play</li><li>Instagram campaigns featuring partner laptops (Alienware, Acer)</li><li>Retail promotion linking straight to purchase points</li></ul></div></div></div>
+    
+    <div class="story"><div class="row"><h2 class="mono lbl">The outcome</h2><div class="body"><p>Authentic pro advocacy, always-on content and retail messaging shifted perception among competitive gamers. Intel wasn't just sponsoring esports. It showed why performance matters where gamers care most: winning.</p><p>The <b>18% sales increase</b> for Intel-powered gaming laptops proved esports could drive conversion, not just awareness.</p></div></div></div>
+    <a class="next" href="case-study-rooter.html"><span class="mono">Next case</span><span class="disp">Rooter exclusive</span><span class="arrow">→</span></a>
   </div>
-</nav>
-
-<div class="wrap">
-  <section class="hero">
-    <div class="breadcrumb">Intel × OR Esports</div>
-    <h1>Intel Inside the Rock</h1>
-    <p class="tagline">How Intel re-established itself as the processor of choice for competitive gamers and drove measurable sales growth for partner retailers.</p>
-  </section>
-
-  <div class="image-container">
-    <img src="../assets/intel.jpg" alt="Intel x OR Esports partnership">
-  </div>
-
-  <div class="content">
-
-    <section class="section">
-      <h2>The Challenge</h2>
-      <p>Intel processors had long been recognized for performance, but they were losing mindshare among India's gaming community. <strong>AMD's lower price point</strong> made it the preferred choice for budget-conscious gamers looking to build their first competitive rig.</p>
-      <p>For Intel, the problem wasn't technology; it was perception. Gamers saw Intel as premium-priced, while AMD was value-for-money. Intel needed to shift the conversation from price to performance where gamers actually made decisions: in esports.</p>
-    </section>
-
-    <section class="section">
-      <h2>The Idea</h2>
-      <p>We positioned Intel where performance mattered most: <strong>professional esports</strong>. By partnering with <strong>OR Esports</strong> for a 12-month campaign, we leveraged the credibility of elite players to demonstrate a simple truth: competitive gaming is won on <strong>milliseconds,</strong> and high-performance hardware makes a measurable difference.</p>
-
-      <div class="insight-box">
-        <p>The strategic shift: Move from "Intel is expensive" to "Intel is what pros use." In esports, that's everything.</p>
-      </div>
-
-      <p>This wasn't about sponsorship logos. It was about authentic advocacy. Professional players, under real competitive pressure, choosing Intel-powered machines.</p>
-    </section>
-
-    <section class="section">
-      <h2>The Execution</h2>
-      <p>Intel became an integrated partner across the OR Esports ecosystem:</p>
-      <ul style="margin:16px 0;padding-left:20px;color:var(--ink-soft)">
-        <li style="margin-bottom:8px">Branding featured on team jerseys and tournament appearances</li>
-        <li style="margin-bottom:8px">Creator content throughout the year showing pro players discussing Intel-powered gaming rigs</li>
-        <li style="margin-bottom:8px">Live stream mentions during competitive play, highlighting performance advantages</li>
-        <li style="margin-bottom:8px">Instagram campaigns showcasing partner gaming laptops (Alienware, Acer) with Intel processors</li>
-        <li style="margin-bottom:8px">Direct retail promotion linking to purchase points</li>
-      </ul>
-      <p>The campaign avoided the trap of "brand mentions." Instead, professional players under competitive pressure shared their genuine experiences using Intel-powered gaming machines, highlighting the performance, responsiveness, and reliability required to compete at the highest level.</p>
-    </section>
-
-    <div class="results">
-      <h3>Results (12-Month Partnership)</h3>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="num">18%</div>
-          <div class="label">Sales Increase (Intel Gaming Laptops)</div>
-        </div>
-        <div class="stat">
-          <div class="num">35M+</div>
-          <div class="label">Campaign Impressions</div>
-        </div>
-      </div>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="num">18M+</div>
-          <div class="label">Video Views</div>
-        </div>
-      </div>
-    </div>
-
-    <section class="section" style="margin-top:50px">
-      <h2>The Outcome</h2>
-      <p>By combining <strong>authentic esports advocacy</strong> with always-on content and retail messaging, Intel successfully shifted perception among competitive gamers. The brand wasn't just sponsoring esports; it was demonstrating why performance mattered in the one context where gamers cared most: winning.</p>
-      <p>The 18% sales increase for Intel-powered gaming laptops proved the strategy worked. Esports didn't just build brand awareness. It drove conversion. Gamers who watched pro players on Intel rigs decided they wanted the same edge.</p>
-
-      <div class="highlight" style="background:#fff;border-left:3px solid var(--accent);padding:24px;margin:30px 0;border-radius:8px">
-        <p style="color:var(--ink);font-weight:600">Lesson: In gaming, authenticity beats messaging. Show, don't tell. Let the pros do the talking.</p>
-      </div>
-    </section>
-
-  </div>
-
-  <div class="cta">
-    <p>Want to position your brand where it actually influences purchase decisions?</p>
-    <a href="index.html#contact" class="btn">Let's Talk</a>
-  </div>
-
-</div>
-
+</article>
+<footer class="wrap foot mono"><span>© 2026 Joshua George</span><span>Dubai · Gaming × brand strategy</span><span>joshuageorge012@gmail.com</span></footer>
 </body>
 </html>
