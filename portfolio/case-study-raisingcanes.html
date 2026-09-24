@@ -80,6 +80,7 @@ b{color:var(--text);font-weight:650}
 .gallery figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--bg-2)}
 .gallery img{width:100%;aspect-ratio:16/10;object-fit:cover}
 .gallery.sq img{aspect-ratio:1/1}
+.gallery.two{grid-template-columns:1fr 1fr}
 .gallery figcaption{padding:12px 14px;color:var(--text-3);font-size:10.5px}
 .pull{margin-top:80px;padding:40px 0 0;border-top:1px solid rgba(var(--brand-t),.55)}
 .pull p{font-stretch:112%;font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.12;letter-spacing:-.02em;max-width:28ch;text-wrap:balance}
@@ -106,7 +107,7 @@ b{color:var(--text);font-weight:650}
  .scoreboard{grid-template-columns:1fr 1fr}
  .cell{padding:22px 14px}.cell:nth-child(3){border-left:0;padding-left:0}.cell:nth-child(n+3){border-top:1px solid var(--line)}
  .row{grid-template-columns:1fr;gap:12px}.row .lbl{position:static}
- .steps,.gallery{grid-template-columns:1fr}
+ .steps,.gallery,.gallery.two{grid-template-columns:1fr}
  .film{left:18px;right:auto;bottom:60px}
  .next{grid-template-columns:1fr auto}.next .mono{grid-column:1/-1}
 }
