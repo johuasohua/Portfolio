@@ -50,6 +50,15 @@ b{color:var(--text);font-weight:650}
 .cs-hero.fit::before{content:"";position:absolute;inset:-40px;background:var(--hero) center/cover;filter:blur(36px) brightness(.45)}
 .cs-hero.fit img{position:relative;object-fit:contain}
 .cs-hero figcaption{position:absolute;left:18px;bottom:16px;padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.72);border:1px solid var(--line-2);font-size:10.5px;color:var(--text)}
+.cs-hero.video{cursor:pointer}
+.cs-hero.video::after{content:"";position:absolute;inset:0;background:rgba(10,10,11,.18);transition:background .2s ease;pointer-events:none}
+.play{position:absolute;left:50%;top:50%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;border:0;background:var(--brand);box-shadow:0 12px 40px rgba(var(--brand-t),.45);cursor:pointer;z-index:2;transition:transform .16s ease-out}
+.play span{position:absolute;left:50%;top:50%;margin:-14px 0 0 -9px;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #0A0A0B}
+.play:active{transform:scale(.97)}
+.play:focus-visible{outline:2px solid var(--text);outline-offset:4px}
+.cs-hero.video .film{z-index:2}
+.cs-hero.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+@media (hover:hover) and (pointer:fine){.cs-hero.video:hover::after{background:rgba(10,10,11,.05)}.cs-hero.video:hover .play{transform:scale(1.06)}}
 .film{position:absolute;right:18px;bottom:16px;padding:10px 16px;border-radius:100px;background:var(--brand);color:#0A0A0B;font-weight:700}
 .res-head{margin-top:64px;color:var(--brand)}
 .scoreboard{display:grid;grid-template-columns:repeat(4,1fr);margin-top:16px;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line)}
@@ -90,6 +99,9 @@ b{color:var(--text);font-weight:650}
  .cs-hero.wide{aspect-ratio:2/1}
  .cs-hero.wide figcaption{display:none}
  .cs-hero.wide .film{bottom:12px;left:12px;padding:8px 12px}
+ .cs-hero.video .film{display:none}
+ .play{width:64px;height:64px;margin:-32px 0 0 -32px}
+ .play span{margin:-11px 0 0 -7px;border-width:11px 0 11px 19px}
 
  .scoreboard{grid-template-columns:1fr 1fr}
  .cell{padding:22px 14px}.cell:nth-child(3){border-left:0;padding-left:0}.cell:nth-child(n+3){border-top:1px solid var(--line)}
