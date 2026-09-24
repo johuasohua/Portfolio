@@ -47,7 +47,8 @@ b{color:var(--text);font-weight:650}
 .meta dd{margin-top:8px;font-weight:600;font-size:15px}
 .cs-hero{position:relative;margin-top:48px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/8;max-width:100%;background:var(--bg-2)}
 .cs-hero img{width:100%;height:100%;object-fit:cover}
-#kfc .cs-hero img{object-position:center 22%}#intel .cs-hero img{object-position:center 30%}
+.cs-hero.fit::before{content:"";position:absolute;inset:-40px;background:var(--hero) center/cover;filter:blur(36px) brightness(.45)}
+.cs-hero.fit img{position:relative;object-fit:contain}
 .cs-hero figcaption{position:absolute;left:18px;bottom:16px;padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.72);border:1px solid var(--line-2);font-size:10.5px;color:var(--text)}
 .film{position:absolute;right:18px;bottom:16px;padding:10px 16px;border-radius:100px;background:var(--brand);color:#0A0A0B;font-weight:700}
 .res-head{margin-top:64px;color:var(--brand)}
@@ -110,7 +111,7 @@ b{color:var(--text);font-weight:650}
     <h1 class="disp cs-title">Intel inside the rock</h1>
     <p class="lede">How Intel re-established itself as the processor of choice for competitive gamers, and drove measurable sales growth for partner retailers.</p>
     <dl class="meta"><div><dt class="mono">Client</dt><dd>Intel India</dd></div><div><dt class="mono">Partner</dt><dd>OR Esports</dd></div><div><dt class="mono">Market</dt><dd>India</dd></div><div><dt class="mono">Duration</dt><dd>12 months</dd></div><div><dt class="mono">My role</dt><dd>Partnership strategy & creative</dd></div></dl>
-    <figure class="cs-hero"><img src="assets/web/intel.webp" alt="Intel × OR Esports, Gaming Technology Partner"><figcaption class="mono">Intel × OR Esports, Gaming Technology Partner</figcaption></figure>
+    <figure class="cs-hero fit" style="--hero:url(assets/web/intel.webp)"><img src="assets/web/intel.webp" alt="Intel × OR Esports, Gaming Technology Partner"><figcaption class="mono">Intel × OR Esports, Gaming Technology Partner</figcaption></figure>
     <div class="res-head mono">Results · 12-month partnership</div>
     <div class="scoreboard"><div class="cell"><div class="num disp">+18<i>%</i></div><div class="mono lbl">Gaming-laptop sales</div></div><div class="cell"><div class="num disp">35M<i>+</i></div><div class="mono lbl">Campaign impressions</div></div><div class="cell"><div class="num disp">18M<i>+</i></div><div class="mono lbl">Video views</div></div><div class="cell"><div class="num disp">12</div><div class="mono lbl">Months always-on</div></div></div>
     

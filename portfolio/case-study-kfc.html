@@ -47,7 +47,8 @@ b{color:var(--text);font-weight:650}
 .meta dd{margin-top:8px;font-weight:600;font-size:15px}
 .cs-hero{position:relative;margin-top:48px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/8;max-width:100%;background:var(--bg-2)}
 .cs-hero img{width:100%;height:100%;object-fit:cover}
-#kfc .cs-hero img{object-position:center 22%}#intel .cs-hero img{object-position:center 30%}
+.cs-hero.fit::before{content:"";position:absolute;inset:-40px;background:var(--hero) center/cover;filter:blur(36px) brightness(.45)}
+.cs-hero.fit img{position:relative;object-fit:contain}
 .cs-hero figcaption{position:absolute;left:18px;bottom:16px;padding:7px 12px;border-radius:100px;background:rgba(10,10,11,.72);border:1px solid var(--line-2);font-size:10.5px;color:var(--text)}
 .film{position:absolute;right:18px;bottom:16px;padding:10px 16px;border-radius:100px;background:var(--brand);color:#0A0A0B;font-weight:700}
 .res-head{margin-top:64px;color:var(--brand)}
@@ -110,7 +111,7 @@ b{color:var(--text);font-weight:650}
     <h1 class="disp cs-title">The KFC Lootbox</h1>
     <p class="lede">Embedding KFC into India's biggest BGMI esports tournament, not as a sponsor, but as part of the victory narrative itself.</p>
     <dl class="meta"><div><dt class="mono">Client</dt><dd>KFC India</dd></div><div><dt class="mono">Partner</dt><dd>OR Esports · Legends Rise</dd></div><div><dt class="mono">Market</dt><dd>India</dd></div><div><dt class="mono">Format</dt><dd>Tournament + always-on</dd></div><div><dt class="mono">My role</dt><dd>Concept & partnership lead</dd></div></dl>
-    <figure class="cs-hero"><img src="assets/web/kfc.webp" alt="Gamer's Loot Box meal, available only on the KFC app"><figcaption class="mono">Gamer's Loot Box meal, available only on the KFC app</figcaption><a class="film mono" href="https://youtu.be/K5rcl7Cx1es" target="_blank" rel="noopener">▶ Watch the campaign film ↗</a></figure>
+    <figure class="cs-hero fit" style="--hero:url(assets/web/kfc.webp)"><img src="assets/web/kfc.webp" alt="Gamer's Loot Box meal, available only on the KFC app"><figcaption class="mono">Gamer's Loot Box meal, available only on the KFC app</figcaption><a class="film mono" href="https://youtu.be/K5rcl7Cx1es" target="_blank" rel="noopener">▶ Watch the campaign film ↗</a></figure>
     <div class="res-head mono">Results · Campaign results</div>
     <div class="scoreboard"><div class="cell"><div class="num disp">27.1M</div><div class="mono lbl">Impressions</div></div><div class="cell"><div class="num disp">5.76M</div><div class="mono lbl">Video views</div></div><div class="cell"><div class="num disp">509K</div><div class="mono lbl">Comments</div></div><div class="cell"><div class="num disp">#1</div><div class="mono lbl">Best Small-Budget Campaign · Brand Disruption Awards '22</div></div></div>
     
